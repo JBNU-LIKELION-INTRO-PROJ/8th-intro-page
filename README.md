@@ -14,7 +14,7 @@
 
 `npm run deploy` 명령어를 통해 [깃허브 페이지 링크](https://jbnu-likelion-intro-proj.github.io/8th-intro-page/) 배포
 
-> 도메인 주소가 복잡하기 나중에 다른 곳에 호스팅 예정
+> 도메인 주소가 복잡하니 나중에 다른 곳에 호스팅 예정
 
 
 ## ✒FAQ 작성 요령
