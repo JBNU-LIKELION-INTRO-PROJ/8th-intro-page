@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <div class="wrapper">
-      <div class="section first-section" id="project">
+      <div class="section first-section" id="projects">
         <div class="cover-black">
-          <div class="perspective-text">
+          <div class="perspective-text justify-center">
             <div class="perspective-item">
               <p></p>
               <p>JBNU</p>
@@ -46,28 +46,27 @@ export default {
 
 .first-section {
   background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  height: 88vh;
 }
 
 .cover-black {
   background: rgba(25, 25, 25, 0.6);
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: inherit;
   text-align: center;
   color: white;
 }
 
 .perspective-text {
   font-family: Arial;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   letter-spacing: -2px;
   text-transform: uppercase;
-  /* cursor: pointer; */
   user-select: none;
-  /* margin-left: -30px; */
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-70%, -50%);
 }
@@ -78,7 +77,7 @@ export default {
 }
 .perspective-item p {
   margin: 0;
-  height: 50px;
+  height: 70px;
   line-height: 50px;
   animation: pers-text ease 7s infinite;
   /* transition: all 0.6s ease-in-out; */
@@ -93,19 +92,16 @@ export default {
   transform: translate(0, -50px);
 } */
 .perspective-item:nth-child(1) {
-  left: 29px;
+  left: 0px;
 }
 .perspective-item:nth-child(2) {
-  left: 58px;
+  left: 29px;
 }
 .perspective-item:nth-child(3) {
-  left: 86px;
+  left: 58px;
 }
 .perspective-item:nth-child(4) {
-  left: 115px;
-}
-.perspective-item:nth-child(5) {
-  left: 144px;
+  left: 86px;
 }
 
 @keyframes pers-text {
@@ -113,7 +109,7 @@ export default {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-50px);
+    transform: translateY(-70px);
   }
 }
 </style>

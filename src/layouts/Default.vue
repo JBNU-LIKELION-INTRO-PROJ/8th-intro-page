@@ -5,7 +5,7 @@
   >
     <header id="menu" class="border-t-14 border-green-700">
       <nav
-        class="container mx-auto flex flex-wrap justify-between items-center py-8"
+        class="container mx-auto flex flex-wrap justify-between items-center py-4"
       >
         <div>
           <g-link v-if="theme === 'theme-light'" to="/"
