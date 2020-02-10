@@ -6,18 +6,18 @@
           <div class="perspective-text">
             <div class="perspective-item">
               <p></p>
-              <p>전북대</p>
-            </div>
-            <div class="perspective-item">
               <p>JBNU</p>
-              <p>멋쟁이</p>
             </div>
             <div class="perspective-item">
+              <p>HACK</p>
               <p>LIKE</p>
-              <p>사자처럼</p>
             </div>
             <div class="perspective-item">
+              <p>YOUR</p>
               <p>LION</p>
+            </div>
+            <div class="perspective-item">
+              <p>LIFE</p>
             </div>
           </div>
         </div>
