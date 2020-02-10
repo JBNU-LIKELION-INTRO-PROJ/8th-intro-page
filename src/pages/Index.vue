@@ -1,7 +1,27 @@
 <template>
   <Layout>
     <div class="wrapper">
-      <div class="section" id="project">First section</div>
+      <div class="section first-section" id="project">
+        <div class="cover-black">
+          <div class="perspective-text">
+            <div class="perspective-item">
+              <p></p>
+              <p>전북대</p>
+            </div>
+            <div class="perspective-item">
+              <p>JBNU</p>
+              <p>멋쟁이</p>
+            </div>
+            <div class="perspective-item">
+              <p>LIKE</p>
+              <p>사자처럼</p>
+            </div>
+            <div class="perspective-item">
+              <p>LION</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="section" id="about">Second section</div>
       <div class="section" id="contact">Third section</div>
     </div>
@@ -14,14 +34,7 @@ export default {
     title: "Home"
   },
   data() {
-    return {
-      options: {
-        licenseKey: "YOUR_KEY_HEERE",
-        menu: "#menu",
-        anchors: ["page1", "page2", "page3"],
-        sectionsColor: ["#41b883", "#ff5f45", "#0798ec"]
-      }
-    };
+    return {};
   }
 };
 </script>
@@ -29,5 +42,78 @@ export default {
 <style scoped>
 .section {
   height: 100vh;
+}
+
+.first-section {
+  background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+}
+
+.cover-black {
+  background: rgba(25, 25, 25, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.perspective-text {
+  font-family: Arial;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  /* cursor: pointer; */
+  user-select: none;
+  /* margin-left: -30px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+}
+.perspective-item {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.perspective-item p {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  animation: pers-text ease 7s infinite;
+  /* transition: all 0.6s ease-in-out; */
+}
+.perspective-item:nth-child(odd) {
+  transform: skew(60deg, -30deg) scaleY(0.667);
+}
+.perspective-item:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.333);
+}
+/* .perspective-text:hover p {
+  transform: translate(0, -50px);
+} */
+.perspective-item:nth-child(1) {
+  left: 29px;
+}
+.perspective-item:nth-child(2) {
+  left: 58px;
+}
+.perspective-item:nth-child(3) {
+  left: 86px;
+}
+.perspective-item:nth-child(4) {
+  left: 115px;
+}
+.perspective-item:nth-child(5) {
+  left: 144px;
+}
+
+@keyframes pers-text {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
 }
 </style>
