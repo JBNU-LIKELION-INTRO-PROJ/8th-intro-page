@@ -35,6 +35,13 @@ module.exports = {
       black: "#000",
       white: "#fff",
 
+      orange: {
+        default: "#f6921e",
+        300: "#f39926",
+        800: "#e67e22",
+        900: "rgba(184,103,10,0.7)"
+      },
+
       green: {
         100: "#f0fff4",
         200: "#c6f6d5",
