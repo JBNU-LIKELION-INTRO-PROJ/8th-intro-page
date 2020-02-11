@@ -26,18 +26,18 @@
             <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
-            <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
+            <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">Faq</a>
+            <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">Faq</g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600">Contact</a>
-            <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
+            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600">Member</a>
+            <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Member</g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link to="/docs" class="text-copy-primary hover:text-gray-600">Docs</g-link>
+            <g-link to="/docs" class="text-copy-primary hover:text-gray-600">Curriculum</g-link>
           </li>
           <li>
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
+            <g-link to="/blog" class="text-copy-primary hover:text-gray-600">About</g-link>
           </li>
         </ul>
       </nav>
@@ -49,7 +49,7 @@
     <footer class="bg-green-700 text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">
-          <div>Copyright {{ new Date().getFullYear() }}. All rights reserved.</div>
+          <div>JBNU Like Lion {{ new Date().getFullYear() }}. All rights reserved.</div>
           <div>
             <a href="/rss.xml" class="text-white hover:text-gray-400 font-normal">RSS Feed</a> |
             <a href="/sitemap.xml" class="text-white hover:text-gray-400 font-normal">Sitemap</a>
