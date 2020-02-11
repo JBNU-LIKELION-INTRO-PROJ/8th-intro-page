@@ -1,68 +1,75 @@
 ---
-title: Introduction to Gridsome
-path: /introduction-to-gridsome
-date: 2019-04-08
-summary: Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
-tags: ['frontend', 'coding', 'vue']
+title: 자주 하는 질문(1)
+path: /introduction-of-likelion
+date: 2020-02-10
+summmary: 멋쟁이 사자처럼 궁금한 질문들 모음
+tags: ['동아리', 'FAQ', '멋쟁이 사자처럼']
 ---
 
-![background](./images/blog_bg_1.jpg)
+![background](./images/likelion.png)
 
-> Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
+>멋쟁이 사자처럼에 대해 궁금해 하실 질문들을 적어 보았습니다.  
 
-### Why Gridsome?
+---
+#### 멋쟁이 사자처럼은 어떤 동아리 인가요?
+- 2013년 프로그래머 이두희씨가 만든 코딩 동아리입니다.  
+  올해 부터는 스타트업 사관학교로 바뀌었습니다.
 
-- **Local development with hot-reloading** - See code changes in real-time.
-- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files.
-- **File-based page routing** - Quickly create and manage routes with files.
-- **Centralized data managment** - Pull data into a local, unified GraphQL data layer.
-- **Vue.js for frontend** - A lightweight and approachable front-end framework.
-- **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
-- **Static files generation** - Deploy securely to any CDN or static web host.
+#### 코딩은 안 배우나요?
+- 배웁니다! 하지만 작년까지 주 된 교육이 코딩이였다면,   
+  이번에는 창업의 전반적인 것을 배웁니다.
 
-[Learn more about how Gridsome works](/docs/how-it-works)
+#### 코딩은 언제 배우나요?
+- 나와 있는 계획으로 봐서는 여름방학 6월에서 8월까지 배웁니다
 
-```js
-<template>
-  <Layout>
-    <div class="container-inner mx-auto my-16">
-      <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
-      <div class="text-xl text-gray-600 mb-8">{{ $page.post.date }}</div>
-      <div class="markdown-body" v-html="$page.post.content" />
-    </div>
-  </Layout>
-</template>
-```
+#### 기획은 구체적으로 어느 것을 배우나요?
+- 현재 날짜로 구체적인 계획이 나오지를 않아 어떻다라고   
+  말씀을 드리지 못하겠습니다.
+
+> 그래도 조금 말씀 드리자면, 웹이나 앱을 통해 만들어야 하는 기획이 있습니다. UX,UI 부터 팀 빌딩까지. 이런 것들을 가르칠 계획으로 알고 있습니다.
+
+#### 수료증을 발급해 주나요?
+- 아쉽지만, 올해부터는 수료증이라는 개념이 없습니다.
+
+#### 수료증이 없으면 대체 무엇으로 제가 했던 것을 남기죠?
+- 올해 멋사를 하시는 분들은 Github라는 원격저장소를 사용합니다.  
+  이 Github 하나만으로 여러분이 스펙이 됩니다.
+
+#### 몇 명 정도 뽑으실 계획이신가요?
+- 12명입니다.
+
+#### 어느 기준으로 뽑으실 계획이신가요?
+- 기획, 개발 두 관점으로 볼 것입니다. 개발은 아직 기준이 정해진 바가 없습니다.
+
+#### 그러면 기획 기준은 무엇인가요?
+ | 기준  |   질문           |
+| :------------ |  :------------------------------- |
+| 1.    | 자신이 가지고 있는 아이디어가 무엇인가?|
+| 2.    | 아이디어가 얼마만큼 구체적인가?          |
+| 3.    | 해결하고자 하는 문제가 무엇인가?|
+| 4.    | 웹과 앱을 통해 이 문제를 해결할 수 있는가?|
+| 5.    | 해결하고자 하는 이유가 무엇이며, 얼마만큼 의지가 있는가?|
+
+이 정도 기준을 가지고 생각하고 있습니다.  
+
+![explain_of_likelion](https://s3.amazonaws.com/media-p.slid.es/uploads/628161/images/3518593/___________2017-02-22______5.47.08.png)
+
+#### 회비가 있나요?
+- 없습니다. 하지만 저희 학교 회비 5만원을 모두에게 걷고자 합니다.
+
+#### 회비, 어디다 쓰실건데요?
+- 회비는 다음과 같은 용도로 쓰고자 합니다.
+  - 회식
+  - 해커톤
+  - MT
+  - 그 외 기타 행사
+- 그 외 모든 요소들은 모든 멤버들과 함께 합의로 결정할 것입니다.  
+- 모든 사용 내역은 엑셀파일로 공개할 것입니다.
+-----
+
+> 멋쟁이 사자처럼에서 프로젝트를 어떻게 운영하는지 궁금하신 분들을 위해  
+> 운영진 중 박종현님의 글들을 업로드 할테니 참고 하시길 바랍니다.
 
 
-### Prerequisites
-You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [Vue Single File components](https://vuejs.org/v2/guide/single-file-components.html) & [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn both.
-
-Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
-
-![background](./images/background.jpg)
-
-### 1. Install Gridsome CLI tool
-
-Using yarn:
-`yarn global add @gridsome/cli`
-
-Using npm:
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to create a new project </li>
-2. `cd my-gridsome-site` to open folder
-3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
-
-### 3. Next steps
-
-1. Create `.vue` components in the `/pages` directory to create page routes.
-2. Use `gridsome build` to generate static files in a `/dist` folder
 
 
-- [How it works](/docs/how-it-works)
-- [How Pages work](/docs/pages)
-- [How to deploy](/docs/deployment)
