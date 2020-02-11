@@ -4,6 +4,8 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import VueScrollTo from "vue-scrollto";
 import VueFuse from "vue-fuse";
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -15,6 +17,10 @@ export default function(Vue, { router, head, isClient }) {
   });
 
   Vue.use(VueFuse);
+  Vue.use(Vuetify);
+
+  // const opts = {};
+  // appOptions.vuetify = new Vuetify(opts);
 
   head.meta.push({
     name: "keywords",
@@ -36,5 +42,10 @@ export default function(Vue, { router, head, isClient }) {
     rel: "stylesheet",
     href:
       "https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean"
+  });
+
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/icon?family=Material+Icons"
   });
 }
