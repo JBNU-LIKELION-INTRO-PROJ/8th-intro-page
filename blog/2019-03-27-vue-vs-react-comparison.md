@@ -1,11 +1,8 @@
 ---
-title: Vue vs React Comparison
-path: /vue-vs-react-comparison
-date: 2019-03-27
-summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
-tags: ['frontend', 'vue', 'react', 'coding']
+title: 수료증은 발급해 주나요?
+path: /question-number-six
+date: 2020-03-04
+summary: 아쉽게도 올해는 수료증이 발급이 되지를 않습니다.
+tags: ['question']
 ---
 
-![background](./images/blog_bg_4.jpg)
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus placeat quia! Voluptates corporis atque itaque, quae in aperiam reiciendis id, beatae dicta optio rem, cumque illum tempore accusamus blanditiis consequuntur doloribus accusantium. Expedita minus suscipit vel nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus placeat quia! Voluptates corporis atque itaque, quae in aperiam reiciendis id, beatae dicta optio rem, cumque illum tempore accusamus blanditiis consequuntur doloribus accusantium. Expedita minus suscipit vel nulla.

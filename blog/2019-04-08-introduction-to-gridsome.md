@@ -1,8 +1,8 @@
 ---
 title: 자주 하는 질문(1)
 path: /introduction-of-likelion
-date: 2020-02-10
-summmary: 멋쟁이 사자처럼 궁금한 질문들 모음
+date: 2010-03-11
+summmary: 멋쟁이 사자처럼 FAQ
 tags: ['동아리', 'FAQ', '멋쟁이 사자처럼']
 ---
 
