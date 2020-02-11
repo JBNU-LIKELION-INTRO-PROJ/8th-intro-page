@@ -2,7 +2,8 @@
   <Layout>
     <div class="wrapper">
       <div class="section first-section" id="projects">
-        <div class="cover-black">
+        <div class="cover-black"></div>
+        <div class="container lg:py-48 py-16">
           <div class="perspective-text justify-center">
             <div class="perspective-item">
               <p></p>
@@ -20,6 +21,11 @@
               <p>LIFE</p>
             </div>
           </div>
+
+          <p class="first-section__text relative">
+            자신이 가지고 있는 아이디어<br />
+            멋쟁이 사자처럼에서 실현해 보세요!
+          </p>
         </div>
       </div>
       <div class="section" id="about">Second section</div>
@@ -45,8 +51,9 @@ export default {
 }
 
 .first-section {
-  background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-  height: 88vh;
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+  height: 93vh;
+  display: flex;
 }
 
 .cover-black {
@@ -54,8 +61,16 @@ export default {
   position: absolute;
   width: 100%;
   height: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   text-align: center;
   color: white;
+  z-index: 10;
 }
 
 .perspective-text {
