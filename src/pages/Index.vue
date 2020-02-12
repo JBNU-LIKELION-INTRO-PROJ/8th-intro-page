@@ -5,7 +5,7 @@
         <div class="cover-black"></div>
         <div class="container">
           <div
-            class="perspective-text relative xl:left-4%  md:left-10% left-25%"
+            class="perspective-text relative xl:left-4%  md:left-10% left-25% top-5%"
           >
             <div class="perspective-item">
               <p></p>
@@ -24,14 +24,17 @@
             </div>
           </div>
 
-          <p class="first-section__text m-10 text-3xl font-semibold">
+          <p
+            class="first-section__text lg:m-10 lg:text-3xl mb-10 text-xl font-semibold"
+          >
             자신이 가지고 있는 <span class="text-orange">아이디어</span><br />
             멋쟁이 사자처럼에서 실현해 보세요!
           </p>
           <v-btn outlined x-large rounded color="primary" dark>
             <a
+              @click.prevent="handleClick"
               class="text-white hover:text-white text-xl"
-              href="http://www.naver.com"
+              href="http://"
               target="blank"
               >지원하기</a
             >
@@ -51,6 +54,11 @@ export default {
   },
   data() {
     return {};
+  },
+  methods: {
+    handleClick(e) {
+      alert("아직 지원 기간이 아닙니다.");
+    }
   }
 };
 </script>
