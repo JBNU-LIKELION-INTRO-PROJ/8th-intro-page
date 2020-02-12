@@ -3,8 +3,10 @@
     <div class="wrapper">
       <div class="section first-section" id="projects">
         <div class="cover-black"></div>
-        <div class="container lg:py-48 py-16">
-          <div class="perspective-text justify-center">
+        <div class="container">
+          <div
+            class="perspective-text relative xl:left-4%  md:left-10% left-25%"
+          >
             <div class="perspective-item">
               <p></p>
               <p>JBNU</p>
@@ -57,7 +59,6 @@ export default {
   background-position-y: center;
   animation: fadeIn 0.9s ease-in-out forwards;
   display: flex;
-  text-align: center;
 }
 
 .cover-black {
@@ -71,10 +72,11 @@ export default {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   text-align: center;
   color: white;
   z-index: 10;
+  flex-direction: column;
+  align-items: center;
 }
 
 .perspective-text {
@@ -84,9 +86,7 @@ export default {
   letter-spacing: -2px;
   text-transform: uppercase;
   user-select: none;
-  position: absolute;
-  top: 40%;
-  left: 50%;
+
   transform: translate(-70%, -50%);
 }
 .perspective-item {
