@@ -55,7 +55,7 @@ export default {
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-  height: 93vh;
+  animation: fadeIn 0.9s ease-in-out forwards;
   display: flex;
   text-align: center;
 }
@@ -129,6 +129,15 @@ export default {
   }
   50% {
     transform: translateY(-70px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 </style>
