@@ -24,10 +24,18 @@
             </div>
           </div>
 
-          <p class="first-section__text relative">
-            자신이 가지고 있는 아이디어<br />
+          <p class="first-section__text m-10 text-3xl font-semibold">
+            자신이 가지고 있는 <span class="text-orange">아이디어</span><br />
             멋쟁이 사자처럼에서 실현해 보세요!
           </p>
+          <v-btn outlined x-large rounded color="primary" dark>
+            <a
+              class="text-white hover:text-white text-xl"
+              href="http://www.naver.com"
+              target="blank"
+              >지원하기</a
+            >
+          </v-btn>
         </div>
       </div>
       <div class="section" id="about">Second section</div>
