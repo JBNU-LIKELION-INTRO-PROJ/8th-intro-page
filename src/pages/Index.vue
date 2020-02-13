@@ -22,7 +22,20 @@
           </v-btn>
         </div>
       </div>
-      <div class="section" id="about">Second section</div>
+      <div class="section bg-gray-500" id="about">
+        <p>Our Mission</p>
+        <g-image class="" src="../../static/section2_pic1.jpg" width="" />
+
+        <p>저희 멋쟁이 사자처럼은...</p>
+        <p>
+          온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어 자신이
+          <span class="text-orange"
+            >만들고자 하는 서비스를 기획부터 프로그래밍까지</span
+          >
+          돕습니다.
+        </p>
+        <g-image src="../../static/section2_pic2.jpg" width="" />
+      </div>
       <div class="section" id="contact">Third section</div>
     </div>
   </Layout>
