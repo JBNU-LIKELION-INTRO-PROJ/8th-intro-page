@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <div class="wrapper">
+      <!-- First Section -->
       <div class="section first-section" id="projects">
         <div class="cover-black"></div>
         <div class="container">
@@ -22,34 +23,46 @@
           </v-btn>
         </div>
       </div>
+      <!-- Second Section -->
       <div class="section py-5" id="about">
-        <p class="uppercase font-hairline lg:text-5xl text-3xl ml-5">
+        <p
+          class="uppercase font-hairline lg:text-5xl text-3xl ml-5 tracking-widest"
+        >
           Our Mission
         </p>
 
-        <v-divider class="w-3/4 lg:mb-5 pb-4"></v-divider>
+        <v-divider class="w-3/4 pb-4"></v-divider>
 
-        <div class="lg:flex  lg:mb-5">
+        <!-- 2-1 Section -->
+        <div class="lg:flex lg:my-10">
           <div
             class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.jpg')"
           ></div>
-          <p class="second-section__text text-2xl m-5">
-            저희 멋쟁이 사자처럼은
+          <p
+            class="second-section__text text-center text-2xl lg:text-4xl font-thin m-5 self-center lg:m-auto"
+          >
+            저희 <span class="font-semibold">멋쟁이 사자처럼</span>은
           </p>
         </div>
 
-        <div
-          class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
-          style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
-        ></div>
-        <div class="second-section__text lg:text-xl text-xl text-center m-3">
-          온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어 <br />
-          자신이
-          <span class="text-orange">
-            만들고자 하는 서비스를 기획부터 프로그래밍까지
-          </span>
-          돕습니다.
+        <!-- 2-2 Section -->
+        <v-divider class="w-3/4 float-right"></v-divider>
+
+        <div class="lg:flex lg:flex-row-reverse lg:mt-20">
+          <div
+            class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full lg:mt-10"
+            style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
+          ></div>
+          <div
+            class="second-section__text xl:text-2xl lg:text-xl text-xl text-center self-center font-thin m-5 lg:m-auto lg:max-w-2xl"
+          >
+            온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어, 자신이
+            <span class="text-orange font-bold">
+              만들고자 하는 서비스를 기획부터 프로그래밍까지
+            </span>
+            돕습니다.
+          </div>
         </div>
       </div>
       <div class="section bg-gray-100" id="contact">Third section</div>

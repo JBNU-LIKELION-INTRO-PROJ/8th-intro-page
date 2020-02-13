@@ -14,9 +14,12 @@ module.exports = {
 
         "15vh": "15vh",
         "30vh": "30vh",
+        "35vh": "35vh",
+        "40vh": "40vh",
         "45vh": "45vh",
         "60vh": "60vh",
 
+        "30vw": "30vw",
         "60vw": "60vw"
       },
       borderWidth: {
