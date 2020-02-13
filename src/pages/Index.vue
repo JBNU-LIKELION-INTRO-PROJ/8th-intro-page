@@ -7,10 +7,11 @@
         <div class="container">
           <catch-phrase />
           <p
-            class="first-section__text lg:m-10 lg:text-3xl mb-10 text-xl font-semibold"
+            class="first-section__text lg:m-10 lg:text-3xl mb-10 text-xl font-semibold select-none"
           >
             자신이 가지고 있는 <span class="text-orange">아이디어</span><br />
-            멋쟁이 사자처럼에서 실현해 보세요!
+            <span class="hover:text-orange">멋쟁이 사자처럼</span>에서 실현해
+            보세요!
           </p>
           <v-btn outlined x-large rounded color="primary" dark>
             <a
@@ -42,7 +43,9 @@
           <p
             class="second-section__text text-center text-2xl lg:text-4xl font-thin m-5 self-center lg:m-auto"
           >
-            저희 <span class="font-semibold">멋쟁이 사자처럼</span>은
+            저희
+            <span class="font-semibold hover:text-orange">멋쟁이 사자처럼</span
+            >은
           </p>
         </div>
 
@@ -58,7 +61,7 @@
             class="second-section__text xl:text-2xl text-xl text-center self-center font-thin m-5 lg:m-auto lg:max-w-2xl"
           >
             온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어, 자신이
-            <span class="text-orange font-bold">
+            <span class="hover:text-orange font-bold">
               만들고자 하는 서비스를 기획부터 프로그래밍까지
             </span>
             하도록 돕습니다.
