@@ -27,31 +27,32 @@
           Our Mission
         </p>
 
-        <v-divider class="w-3/4 lg:pb-5 pb-4"></v-divider>
+        <v-divider class="w-3/4 lg:mb-5 pb-4"></v-divider>
 
-        <div class="flex-col h-full text-center lg:mb-5">
+        <div class="lg:flex  lg:mb-5">
           <div
             class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.jpg')"
           ></div>
-          <p class="second-section__text text-xl m-4">
+          <p class="second-section__text text-2xl m-5">
             저희 멋쟁이 사자처럼은
           </p>
+        </div>
 
-          <div
-            class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
-            style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
-          ></div>
-          <div class="second-section__text lg:text-xl text-xl text-center m-3">
-            온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어 자신이
-            <span class="text-orange">
-              만들고자 하는 서비스를 기획부터 프로그래밍까지
-            </span>
-            돕습니다.
-          </div>
+        <div
+          class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
+          style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
+        ></div>
+        <div class="second-section__text lg:text-xl text-xl text-center m-3">
+          온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어 <br />
+          자신이
+          <span class="text-orange">
+            만들고자 하는 서비스를 기획부터 프로그래밍까지
+          </span>
+          돕습니다.
         </div>
       </div>
-      <div class="section" id="contact">Third section</div>
+      <div class="section bg-gray-100" id="contact">Third section</div>
     </div>
   </Layout>
 </template>
