@@ -55,13 +55,13 @@
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
           ></div>
           <div
-            class="second-section__text xl:text-2xl lg:text-xl text-xl text-center self-center font-thin m-5 lg:m-auto lg:max-w-2xl"
+            class="second-section__text xl:text-2xl text-xl text-center self-center font-thin m-5 lg:m-auto lg:max-w-2xl"
           >
             온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어, 자신이
             <span class="text-orange font-bold">
               만들고자 하는 서비스를 기획부터 프로그래밍까지
             </span>
-            돕습니다.
+            하도록 돕습니다.
           </div>
         </div>
       </div>
