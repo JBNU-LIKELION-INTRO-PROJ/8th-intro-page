@@ -10,7 +10,14 @@ module.exports = {
     extend: {
       spacing: {
         "80": "20rem",
-        "108": "27rem"
+        "108": "27rem",
+
+        "15vh": "15vh",
+        "30vh": "30vh",
+        "45vh": "45vh",
+        "60vh": "60vh",
+
+        "60vw": "60vw"
       },
       borderWidth: {
         "14": "14px"

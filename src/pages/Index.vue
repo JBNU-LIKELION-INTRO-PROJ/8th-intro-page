@@ -22,19 +22,31 @@
           </v-btn>
         </div>
       </div>
-      <div class="section bg-gray-500" id="about">
-        <p>Our Mission</p>
-        <g-image class="" src="../../static/section2_pic1.jpg" width="" />
-
-        <p>저희 멋쟁이 사자처럼은...</p>
-        <p>
-          온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어 자신이
-          <span class="text-orange"
-            >만들고자 하는 서비스를 기획부터 프로그래밍까지</span
-          >
-          돕습니다.
+      <div class="section lg:py-10 py-5" id="about">
+        <p class="uppercase font-hairline lg:text-5xl text-3xl ml-5">
+          Our Mission
         </p>
-        <g-image src="../../static/section2_pic2.jpg" width="" />
+        <v-divider class="w-3/4 lg:pb-5 pb-4"></v-divider>
+
+        <div
+          class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
+          style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.jpg')"
+        ></div>
+        <div class="second-section__text py-5">
+          <p>저희 멋쟁이 사자처럼은</p>
+
+          <p>
+            온라인과 오프라인 활동을 통해 뜻을 같이하는 팀을 만들어 자신이
+            <span class="text-orange">
+              만들고자 하는 서비스를 기획부터 프로그래밍까지
+            </span>
+            돕습니다.
+          </p>
+        </div>
+        <div
+          class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
+          style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
+        ></div>
       </div>
       <div class="section" id="contact">Third section</div>
     </div>
@@ -100,5 +112,9 @@ export default {
   to {
     opacity: 1;
   }
+}
+
+.second-section__text {
+  word-break: keep-all;
 }
 </style>
