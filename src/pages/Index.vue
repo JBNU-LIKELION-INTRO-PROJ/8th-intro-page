@@ -3,8 +3,10 @@
     <div class="wrapper">
       <div class="section first-section" id="projects">
         <div class="cover-black"></div>
-        <div class="container lg:py-48 py-16">
-          <div class="perspective-text justify-center">
+        <div class="container">
+          <div
+            class="perspective-text relative xl:left-4%  md:left-10% left-25% top-5%"
+          >
             <div class="perspective-item">
               <p></p>
               <p>JBNU</p>
@@ -22,10 +24,21 @@
             </div>
           </div>
 
-          <p class="first-section__text relative">
-            자신이 가지고 있는 아이디어<br />
+          <p
+            class="first-section__text lg:m-10 lg:text-3xl mb-10 text-xl font-semibold"
+          >
+            자신이 가지고 있는 <span class="text-orange">아이디어</span><br />
             멋쟁이 사자처럼에서 실현해 보세요!
           </p>
+          <v-btn outlined x-large rounded color="primary" dark>
+            <a
+              @click.prevent="handleClick"
+              class="text-white hover:text-white text-xl"
+              href="http://"
+              target="blank"
+              >지원하기</a
+            >
+          </v-btn>
         </div>
       </div>
       <div class="section" id="about">Second section</div>
@@ -41,6 +54,11 @@ export default {
   },
   data() {
     return {};
+  },
+  methods: {
+    handleClick(e) {
+      alert("아직 지원 기간이 아닙니다.");
+    }
   }
 };
 </script>
@@ -53,10 +71,10 @@ export default {
 .first-section {
   background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
   background-size: cover;
+  background-position-x: center;
   background-position-y: center;
-  height: 93vh;
+  animation: fadeIn 0.9s ease-in-out forwards;
   display: flex;
-  text-align: center;
 }
 
 .cover-black {
@@ -70,10 +88,11 @@ export default {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   text-align: center;
   color: white;
   z-index: 10;
+  flex-direction: column;
+  align-items: center;
 }
 
 .perspective-text {
@@ -83,9 +102,7 @@ export default {
   letter-spacing: -2px;
   text-transform: uppercase;
   user-select: none;
-  position: absolute;
-  top: 40%;
-  left: 50%;
+
   transform: translate(-70%, -50%);
 }
 .perspective-item {
@@ -128,6 +145,15 @@ export default {
   }
   50% {
     transform: translateY(-70px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 </style>
