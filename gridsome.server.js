@@ -9,6 +9,7 @@ const fs = require("fs");
 const path = require("path");
 const pick = require("lodash.pick");
 const { pathPrefix } = require("./gridsome.config");
+const nodeExternals = require("webpack-node-externals");
 
 module.exports = function(api, options) {
   api.chainWebpack((config, { isServer }) => {
