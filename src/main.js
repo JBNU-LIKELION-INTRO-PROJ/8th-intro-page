@@ -7,7 +7,7 @@ import VueFuse from "vue-fuse";
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
 
-export default function(Vue, { router, head, isClient }) {
+export default function(Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 
@@ -18,9 +18,7 @@ export default function(Vue, { router, head, isClient }) {
 
   Vue.use(VueFuse);
   Vue.use(Vuetify);
-
-  // const opts = {};
-  // appOptions.vuetify = new Vuetify(opts);
+  appOptions.vuetify = new Vuetify({});
 
   head.meta.push({
     name: "keywords",
