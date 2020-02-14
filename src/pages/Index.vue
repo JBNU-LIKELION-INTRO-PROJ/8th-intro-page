@@ -9,13 +9,14 @@
           <p
             class="first-section__text lg:m-10 lg:text-3xl mb-10 text-xl font-semibold select-none"
           >
-            자신이 가지고 있는 <span class="text-orange">아이디어</span><br />
+            자신이 가지고 있는
+            <span class="text-orange">아이디어</span><br />
             <span class="hover:text-orange">멋쟁이 사자처럼</span>에서 실현해
             보세요!
           </p>
           <a
             @click.prevent="handleClick"
-            class="text-white hover:text-gray-900 hover:bg-white text-xl apply-button px-6 py-2 rounded-full"
+            class="border-2 border-white text-white hover:text-gray-900 hover:bg-white text-xl px-6 py-2 rounded-full"
             href="http://"
             target="blank"
             >지원하기</a
@@ -134,6 +135,10 @@ export default {
   z-index: 10;
   flex-direction: column;
   align-items: center;
+}
+
+.apply-button {
+  border: 1px solid white;
 }
 
 @keyframes fadeIn {
