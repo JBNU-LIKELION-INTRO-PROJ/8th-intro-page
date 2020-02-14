@@ -52,7 +52,7 @@
         </div>
 
         <!-- 2-2 Section -->
-        <hr class="w-3/4 float-right" />
+        <hr class="w-3/4 float-right hidden md:block" />
 
         <div class="lg:flex lg:flex-row-reverse lg:mt-20">
           <!-- 2-2 Section bg pic -->
