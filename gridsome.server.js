@@ -16,7 +16,7 @@ module.exports = function(api, options) {
     if (isServer) {
       config.externals([
         nodeExternals({
-          whitelist: [/^vuetify/]
+          whitelist: [/^vuetify/, /^Vuetify/]
         })
       ]);
     }
