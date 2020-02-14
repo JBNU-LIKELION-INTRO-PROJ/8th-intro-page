@@ -13,15 +13,13 @@
             <span class="hover:text-orange">멋쟁이 사자처럼</span>에서 실현해
             보세요!
           </p>
-          <v-btn outlined x-large rounded color="primary" dark>
-            <a
-              @click.prevent="handleClick"
-              class="text-white hover:text-white text-xl"
-              href="http://"
-              target="blank"
-              >지원하기</a
-            >
-          </v-btn>
+          <a
+            @click.prevent="handleClick"
+            class="text-white hover:text-gray-900 hover:bg-white text-xl apply-button px-6 py-2 rounded-full"
+            href="http://"
+            target="blank"
+            >지원하기</a
+          >
         </div>
       </div>
       <!-- Second Section -->
@@ -32,8 +30,7 @@
           Our Mission
         </p>
 
-        <v-divider class="w-3/4 pb-4"></v-divider>
-
+        <hr class="w-3/4 pb-4" />
         <!-- 2-1 Section -->
         <div class="lg:flex lg:my-10">
           <!-- 2-1 Section bg pic -->
@@ -54,7 +51,7 @@
         </div>
 
         <!-- 2-2 Section -->
-        <v-divider class="w-3/4 float-right"></v-divider>
+        <hr class="w-3/4 float-right" />
 
         <div class="lg:flex lg:flex-row-reverse lg:mt-20">
           <!-- 2-2 Section bg pic -->
