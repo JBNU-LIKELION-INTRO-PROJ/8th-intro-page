@@ -103,7 +103,7 @@ export default {
 </script>
 
 <style scoped>
-html {
+.wrapper {
   scroll-snap-type: y mandatory;
 }
 
