@@ -9,19 +9,18 @@
           <p
             class="first-section__text lg:m-10 lg:text-3xl mb-10 text-xl font-semibold select-none"
           >
-            자신이 가지고 있는 <span class="text-orange">아이디어</span><br />
+            자신이 가지고 있는
+            <span class="text-orange">아이디어</span><br />
             <span class="hover:text-orange">멋쟁이 사자처럼</span>에서 실현해
             보세요!
           </p>
-          <v-btn outlined x-large rounded color="primary" dark>
-            <a
-              @click.prevent="handleClick"
-              class="text-white hover:text-white text-xl"
-              href="http://"
-              target="blank"
-              >지원하기</a
-            >
-          </v-btn>
+          <a
+            @click.prevent="handleClick"
+            class="border-2 border-white text-white hover:text-gray-900 hover:bg-white text-xl px-6 py-2 rounded-full"
+            href="http://"
+            target="blank"
+            >지원하기</a
+          >
         </div>
       </div>
       <!-- Second Section -->
@@ -32,8 +31,7 @@
           Our Mission
         </p>
 
-        <v-divider class="w-3/4 pb-4"></v-divider>
-
+        <hr class="w-3/4 pb-4" />
         <!-- 2-1 Section -->
         <div class="lg:flex lg:my-10">
           <!-- 2-1 Section bg pic -->
@@ -54,7 +52,7 @@
         </div>
 
         <!-- 2-2 Section -->
-        <v-divider class="w-3/4 float-right"></v-divider>
+        <hr class="w-3/4 float-right hidden md:block" />
 
         <div class="lg:flex lg:flex-row-reverse lg:mt-20">
           <!-- 2-2 Section bg pic -->
@@ -137,6 +135,10 @@ export default {
   z-index: 10;
   flex-direction: column;
   align-items: center;
+}
+
+.apply-button {
+  border: 1px solid white;
 }
 
 @keyframes fadeIn {
