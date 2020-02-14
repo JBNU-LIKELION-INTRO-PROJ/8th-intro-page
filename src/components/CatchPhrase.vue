@@ -1,5 +1,5 @@
 <template>
-  <div class="perspective-text relative xl:left-4p md:left-10p left-25p">
+  <div class="perspective-text relative xl:left-5p md:left-10p left-25p">
     <div class="perspective-item">
       <p></p>
       <p>JBNU</p>
