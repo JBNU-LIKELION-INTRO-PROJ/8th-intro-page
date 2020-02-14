@@ -36,10 +36,14 @@
 
         <!-- 2-1 Section -->
         <div class="lg:flex lg:my-10">
+          <!-- 2-1 Section bg pic -->
+
           <div
             class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
-            style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.png')"
+            style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.jpg')"
           ></div>
+          <!-- 2-1 Section text -->
+
           <p
             class="second-section__text text-center text-2xl lg:text-4xl font-thin m-5 self-center lg:m-auto"
           >
@@ -53,10 +57,12 @@
         <v-divider class="w-3/4 float-right"></v-divider>
 
         <div class="lg:flex lg:flex-row-reverse lg:mt-20">
+          <!-- 2-2 Section bg pic -->
           <div
-            class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full lg:mt-10"
+            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full lg:mt-10"
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
           ></div>
+          <!-- 2-2 Section text -->
           <div
             class="second-section__text xl:text-2xl text-xl text-center self-center font-thin m-5 lg:m-auto lg:max-w-2xl"
           >
