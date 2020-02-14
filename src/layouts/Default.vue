@@ -112,7 +112,9 @@
         class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
       >
         <div class="mb-8 lg:mb-0">
-          <div>JBNU Like Lion {{ new Date().getFullYear() }}. All rights reserved.</div>
+          <div>
+            JBNU Like Lion {{ new Date().getFullYear() }}. All rights reserved.
+          </div>
           <div>
             <a
               href="/rss.xml"
@@ -259,8 +261,10 @@ query {
 <script>
 import SearchInput from "../components/SearchInput";
 import ThemeSwitcher from "../components/ThemeSwitcher";
+import Vuetify from "vuetify";
 
 export default {
+  vuetify: new Vuetify(),
   components: {
     SearchInput,
     ThemeSwitcher
