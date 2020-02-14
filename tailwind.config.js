@@ -1,4 +1,6 @@
 module.exports = {
+  important: true,
+
   theme: {
     inset: {
       "4%": "4%",
@@ -89,7 +91,6 @@ module.exports = {
     fontFamily: {
       sans: [
         "Noto Sans KR",
-        "Roboto",
         "-apple-system",
         "BlinkMacSystemFont",
         '"Segoe UI"',
