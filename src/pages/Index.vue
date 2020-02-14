@@ -39,7 +39,7 @@
           <!-- 2-1 Section bg pic -->
 
           <div
-            class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
+            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full"
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.jpg')"
           ></div>
           <!-- 2-1 Section text -->
@@ -59,7 +59,7 @@
         <div class="lg:flex lg:flex-row-reverse lg:mt-20">
           <!-- 2-2 Section bg pic -->
           <div
-            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full lg:mt-10"
+            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full "
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
           ></div>
           <!-- 2-2 Section text -->
