@@ -1,34 +1,17 @@
 <template>
   <Layout>
     <div class="wrapper">
+      <!-- First Section -->
       <div class="section first-section" id="projects">
         <div class="cover-black"></div>
         <div class="container">
-          <div
-            class="perspective-text relative xl:left-4%  md:left-10% left-25% top-5%"
-          >
-            <div class="perspective-item">
-              <p></p>
-              <p>JBNU</p>
-            </div>
-            <div class="perspective-item">
-              <p>HACK</p>
-              <p>LIKE</p>
-            </div>
-            <div class="perspective-item">
-              <p>YOUR</p>
-              <p>LION</p>
-            </div>
-            <div class="perspective-item">
-              <p>LIFE</p>
-            </div>
-          </div>
-
+          <catch-phrase />
           <p
-            class="first-section__text lg:m-10 lg:text-3xl mb-10 text-xl font-semibold"
+            class="first-section__text lg:m-10 lg:text-3xl mb-10 text-xl font-semibold select-none"
           >
             자신이 가지고 있는 <span class="text-orange">아이디어</span><br />
-            멋쟁이 사자처럼에서 실현해 보세요!
+            <span class="hover:text-orange">멋쟁이 사자처럼</span>에서 실현해
+            보세요!
           </p>
           <v-btn outlined x-large rounded color="primary" dark>
             <a
@@ -41,19 +24,75 @@
           </v-btn>
         </div>
       </div>
-      <div class="section" id="about">Second section</div>
-      <div class="section" id="contact">Third section</div>
+      <!-- Second Section -->
+      <div class="section py-5" id="about">
+        <p
+          class="uppercase font-hairline lg:text-5xl text-3xl ml-5 tracking-widest"
+        >
+          Our Mission
+        </p>
+
+        <v-divider class="w-3/4 pb-4"></v-divider>
+
+        <!-- 2-1 Section -->
+        <div class="lg:flex lg:my-10">
+          <!-- 2-1 Section bg pic -->
+
+          <div
+            class="lg:w-60vw h-30vh bg-no-repeat bg-center bg-cover w-full"
+            style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.jpg')"
+          ></div>
+          <!-- 2-1 Section text -->
+
+          <p
+            class="second-section__text text-center text-2xl lg:text-4xl font-thin m-5 self-center lg:m-auto"
+          >
+            저희
+            <span class="font-semibold hover:text-orange">멋쟁이 사자처럼</span
+            >은
+          </p>
+        </div>
+
+        <!-- 2-2 Section -->
+        <v-divider class="w-3/4 float-right"></v-divider>
+
+        <div class="lg:flex lg:flex-row-reverse lg:mt-20">
+          <!-- 2-2 Section bg pic -->
+          <div
+            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full lg:mt-10"
+            style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
+          ></div>
+          <!-- 2-2 Section text -->
+          <div
+            class="second-section__text xl:text-2xl text-xl text-center self-center font-thin m-5 lg:m-auto lg:max-w-2xl"
+          >
+            온라인과 오프라인 활동을 통해 팀을 만들어, 자신이 만들고자 하는
+            서비스를
+            <span class="hover:text-orange font-bold">
+              기획부터 프로그래밍까지
+            </span>
+            할 수 있도록 돕습니다.
+          </div>
+        </div>
+      </div>
+      <div class="section bg-gray-100" id="contact">Third section</div>
     </div>
   </Layout>
 </template>
 
 <script>
+import CatchPhrase from "../components/CatchPhrase";
 export default {
   metaInfo: {
     title: "Home"
   },
+  components: {
+    CatchPhrase
+  },
   data() {
-    return {};
+    return {
+      isActive: false
+    };
   },
   methods: {
     handleClick(e) {
@@ -64,8 +103,13 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-snap-type: y mandatory;
+}
+
 .section {
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 .first-section {
@@ -95,59 +139,6 @@ export default {
   align-items: center;
 }
 
-.perspective-text {
-  font-family: Arial;
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-  user-select: none;
-
-  transform: translate(-70%, -50%);
-}
-.perspective-item {
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
-.perspective-item p {
-  margin: 0;
-  height: 70px;
-  line-height: 50px;
-  animation: pers-text ease 7s infinite;
-  /* transition: all 0.6s ease-in-out; */
-}
-.perspective-item:nth-child(odd) {
-  transform: skew(60deg, -30deg) scaleY(0.667);
-}
-.perspective-item:nth-child(even) {
-  transform: skew(0deg, -30deg) scaleY(1.333);
-}
-/* .perspective-text:hover p {
-  transform: translate(0, -50px);
-} */
-.perspective-item:nth-child(1) {
-  left: 0px;
-}
-.perspective-item:nth-child(2) {
-  left: 29px;
-}
-.perspective-item:nth-child(3) {
-  left: 58px;
-}
-.perspective-item:nth-child(4) {
-  left: 86px;
-}
-
-@keyframes pers-text {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-70px);
-  }
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -155,5 +146,9 @@ export default {
   to {
     opacity: 1;
   }
+}
+
+.second-section__text {
+  word-break: keep-all;
 }
 </style>
