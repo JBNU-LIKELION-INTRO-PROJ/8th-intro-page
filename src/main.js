@@ -40,6 +40,10 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     href:
       "https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean"
   });
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://unpkg.com/swiper/css/swiper.min.css"
+  });
 
   // head.link.push({
   //   rel: "stylesheet",

@@ -74,24 +74,20 @@
           </div>
         </div>
       </div>
-      <div class="section py-5 flex content-center" id="contact">
-        <swiper-slider />
-      </div>
+      <div class="section py-5 flex content-center" id="contact"></div>
     </div>
   </Layout>
 </template>
 
 <script>
 import CatchPhrase from "../components/CatchPhrase";
-import SwiperSlider from "../components/SwiperSlider";
 
 export default {
   metaInfo: {
     title: "Home"
   },
   components: {
-    CatchPhrase,
-    SwiperSlider
+    CatchPhrase
   },
   data() {
     return {
