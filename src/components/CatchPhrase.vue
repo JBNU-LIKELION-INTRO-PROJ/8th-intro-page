@@ -1,5 +1,5 @@
 <template>
-  <div class="perspective-text relative">
+  <div class="perspective-text relative left-80 md:left-90">
     <div class="perspective-item">
       <p></p>
       <p>JBNU</p>
@@ -32,7 +32,9 @@ export default {};
   user-select: none;
   transform: translate(-70%, -50%);
   top: 5px;
-  left: 95px;
+  display: inline-block;
+  text-align: center;
+  /* left: 95px; */
 }
 .perspective-item {
   height: 50px;
