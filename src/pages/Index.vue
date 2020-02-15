@@ -74,8 +74,7 @@
           </div>
         </div>
       </div>
-      <div class="section" id="contact">
-        Third section
+      <div class="section py-5 flex content-center" id="contact">
         <swiper-slider />
       </div>
     </div>
@@ -96,34 +95,7 @@ export default {
   },
   data() {
     return {
-      isActive: false,
-
-      projects: [
-        {
-          id: 1,
-          title: "알려줘 전북대",
-          profileImage: "",
-          link: ""
-        },
-        {
-          id: 2,
-          title: "알려줘 전북대",
-          profileImage: "",
-          link: ""
-        },
-        {
-          id: 3,
-          title: "알려줘 전북대",
-          profileImage: "",
-          link: ""
-        },
-        {
-          id: 4,
-          title: "알려줘 전북대",
-          profileImage: "",
-          link: ""
-        }
-      ]
+      isActive: false
     };
   },
 

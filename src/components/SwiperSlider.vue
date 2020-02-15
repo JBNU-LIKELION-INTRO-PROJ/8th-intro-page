@@ -1,16 +1,18 @@
 <template>
-  <swiper :options="swiperOption" ref="mySwiper">
+  <swiper class="m-auto" :options="swiperOption" ref="mySwiper">
     <!-- slides -->
-    <swiper-slide>I'm Slide 1</swiper-slide>
-    <swiper-slide>I'm Slide 2</swiper-slide>
+    <swiper-slide v-for="item in index" :key="item"
+      >I'm Slide {{ item }}</swiper-slide
+    >
+    <!-- <swiper-slide>I'm Slide 2</swiper-slide>
     <swiper-slide>I'm Slide 3</swiper-slide>
     <swiper-slide>I'm Slide 4</swiper-slide>
     <swiper-slide>I'm Slide 5</swiper-slide>
     <swiper-slide>I'm Slide 6</swiper-slide>
-    <swiper-slide>I'm Slide 7</swiper-slide>
+    <swiper-slide>I'm Slide 7</swiper-slide> -->
     <!-- Optional controls -->
 
-    <div class="swiper-pagination" slot="pagination"></div>
+    <div class="swiper-pagination bg-orange" slot="pagination"></div>
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>
   </swiper>
@@ -25,6 +27,9 @@ export default {
     return {
       swiperOption: {
         // swiper 옵션, 콜백함수 모두 동일하게 사용
+        slidesPerView: "auto",
+        loop: true,
+
         pagination: {
           type: "progressbar",
           el: ".swiper-pagination"
@@ -33,7 +38,34 @@ export default {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
         }
-      }
+      },
+      index: 4,
+      projects: [
+        {
+          id: 1,
+          title: "알려줘 전북대",
+          profileImage: "",
+          link: ""
+        },
+        {
+          id: 2,
+          title: "알려줘 전북대",
+          profileImage: "",
+          link: ""
+        },
+        {
+          id: 3,
+          title: "알려줘 전북대",
+          profileImage: "",
+          link: ""
+        },
+        {
+          id: 4,
+          title: "알려줘 전북대",
+          profileImage: "",
+          link: ""
+        }
+      ]
     };
   },
   components: {
@@ -50,7 +82,7 @@ export default {
 
 <style scoped>
 .swiper-container {
-  height: 300px;
+  height: 75vh;
   width: 100%;
 }
 
@@ -58,7 +90,7 @@ export default {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  /* background-color: #eee; */
+  background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,5 +100,10 @@ export default {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f6921e;
 }
 </style>
