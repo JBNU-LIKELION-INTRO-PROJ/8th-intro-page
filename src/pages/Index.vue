@@ -74,7 +74,7 @@
           </div>
         </div>
       </div>
-      <div class="section bg-gray-100" id="contact">Third section</div>
+      <div class="section" id="contact">Third section</div>
     </div>
   </Layout>
 </template>
@@ -90,7 +90,33 @@ export default {
   },
   data() {
     return {
-      isActive: false
+      isActive: false,
+      projects: [
+        {
+          id: 1,
+          title: "알려줘 전북대",
+          profileImage: "",
+          link: ""
+        },
+        {
+          id: 2,
+          title: "알려줘 전북대",
+          profileImage: "",
+          link: ""
+        },
+        {
+          id: 3,
+          title: "알려줘 전북대",
+          profileImage: "",
+          link: ""
+        },
+        {
+          id: 4,
+          title: "알려줘 전북대",
+          profileImage: "",
+          link: ""
+        }
+      ]
     };
   },
   methods: {
