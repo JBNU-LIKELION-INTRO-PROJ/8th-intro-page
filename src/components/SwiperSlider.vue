@@ -1,28 +1,31 @@
 <template>
-  <swiper class="m-auto" :options="swiperOption" ref="mySwiper">
-    <!-- slides -->
-    <swiper-slide v-for="item in index" :key="item"
-      >I'm Slide {{ item }}</swiper-slide
-    >
-    <!-- <swiper-slide>I'm Slide 2</swiper-slide>
-      <swiper-slide>I'm Slide 3</swiper-slide>
-      <swiper-slide>I'm Slide 4</swiper-slide>
-      <swiper-slide>I'm Slide 5</swiper-slide>
-      <swiper-slide>I'm Slide 6</swiper-slide>
-      <swiper-slide>I'm Slide 7</swiper-slide> -->
-    <!-- Optional controls -->
+  <ClientOnly>
+    <swiper class="m-auto" :options="swiperOption" ref="mySwiper">
+      <!-- slides -->
+      <swiper-slide v-for="item in index" :key="item"
+        >I'm Slide {{ item }}</swiper-slide
+      >
+      <!-- <swiper-slide>I'm Slide 2</swiper-slide>
+        <swiper-slide>I'm Slide 3</swiper-slide>
+        <swiper-slide>I'm Slide 4</swiper-slide>
+        <swiper-slide>I'm Slide 5</swiper-slide>
+        <swiper-slide>I'm Slide 6</swiper-slide>
+        <swiper-slide>I'm Slide 7</swiper-slide> -->
+      <!-- Optional controls -->
 
-    <div class="swiper-pagination" slot="pagination"></div>
-    <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div>
-  </swiper>
+      <div class="swiper-pagination" slot="pagination"></div>
+      <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next" slot="button-next"></div>
+    </swiper>
+  </ClientOnly>
 </template>
 
 <script>
-// import "swiper/css/swiper.css";
-import { swiper, swiperSlide } from "vue-awesome-swiper";
+// import "swiper/dist/css/swiper.css";
+// import { swiper, swiperSlide } from "vue-awesome-swiper";
 
 export default {
+  name: "SwiperSlider",
   data() {
     return {
       swiperOption: {
@@ -69,17 +72,21 @@ export default {
     };
   },
   components: {
-    swiper,
-    swiperSlide
+    swiper: () =>
+      import("vue-awesome-swiper")
+        .then(m => m.swiper)
+        .catch(),
+    swiperSlide: () =>
+      import("vue-awesome-swiper/src")
+        .then(m => m.swiperSlide)
+        .catch()
   },
   computed: {
     swiper() {
       return this.$refs.mySwiper.swiper;
     }
   },
-  mounted() {
-    window.$ = require("swiper");
-  }
+  mounted() {}
 };
 </script>
 
@@ -93,7 +100,7 @@ export default {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  /* background-color: #eee; */
+  background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
