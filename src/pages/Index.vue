@@ -11,12 +11,13 @@
           >
             자신이 가지고 있는
             <span class="text-orange">아이디어</span><br />
-            <span class="hover:text-orange">멋쟁이 사자처럼</span>에서 실현해
-            보세요!
+            <span class="hover:text-orange soft-transition"
+              >멋쟁이 사자처럼</span
+            >에서 실현해 보세요!
           </p>
           <a
             @click.prevent="handleClick"
-            class="border-2 border-white text-white hover:text-gray-900 hover:bg-white text-xl px-6 py-2 rounded-full"
+            class="soft-transition border-2 border-white text-white hover:text-gray-900 hover:bg-white text-xl px-6 py-2 rounded-full"
             href="http://"
             target="blank"
             >지원하기</a
@@ -45,7 +46,8 @@
             class="second-section__text text-center text-2xl lg:text-4xl font-thin m-5 self-center lg:m-auto"
           >
             저희
-            <span class="font-semibold hover:text-orange">멋쟁이 사자처럼</span
+            <span class="font-semibold hover:text-orange soft-transition"
+              >멋쟁이 사자처럼</span
             >은
           </p>
         </div>
@@ -65,7 +67,7 @@
           >
             온라인과 오프라인 활동을 통해 팀을 만들어, 자신이 만들고자 하는
             서비스를
-            <span class="hover:text-orange font-bold">
+            <span class="hover:text-orange soft-transition font-bold">
               기획부터 프로그래밍까지
             </span>
             할 수 있도록 돕습니다.
@@ -134,6 +136,11 @@ export default {
   z-index: 10;
   flex-direction: column;
   align-items: center;
+}
+
+.soft-transition {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .scale-up:hover {
