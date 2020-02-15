@@ -12,7 +12,7 @@
     <swiper-slide>I'm Slide 7</swiper-slide> -->
     <!-- Optional controls -->
 
-    <div class="swiper-pagination bg-orange" slot="pagination"></div>
+    <div class="swiper-pagination" slot="pagination"></div>
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>
   </swiper>
@@ -90,7 +90,7 @@ export default {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  background-color: #eee;
+  /* background-color: #eee; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,5 +105,12 @@ export default {
 .swiper-button-next,
 .swiper-button-prev {
   color: #f6921e;
+}
+</style>
+
+// global Style
+<style>
+.swiper-pagination-progressbar-fill {
+  background: #f6921e !important;
 }
 </style>
