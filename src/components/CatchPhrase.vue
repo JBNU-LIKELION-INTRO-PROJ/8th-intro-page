@@ -1,5 +1,5 @@
 <template>
-  <div class="perspective-text relative xl:left-4p md:left-10p left-25p">
+  <div class="perspective-text relative">
     <div class="perspective-item">
       <p></p>
       <p>JBNU</p>
@@ -30,8 +30,9 @@ export default {};
   letter-spacing: -2px;
   text-transform: uppercase;
   user-select: none;
-
   transform: translate(-70%, -50%);
+  top: 5px;
+  left: 95px;
 }
 .perspective-item {
   height: 50px;

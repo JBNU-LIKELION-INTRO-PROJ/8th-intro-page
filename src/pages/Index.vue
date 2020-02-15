@@ -35,9 +35,8 @@
         <!-- 2-1 Section -->
         <div class="lg:flex lg:my-10">
           <!-- 2-1 Section bg pic -->
-
           <div
-            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full"
+            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full xl:bg-bottom-m6"
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.jpg')"
           ></div>
           <!-- 2-1 Section text -->
@@ -57,7 +56,7 @@
         <div class="lg:flex lg:flex-row-reverse lg:mt-20">
           <!-- 2-2 Section bg pic -->
           <div
-            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full "
+            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full xl:bg-bottom-m13"
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
           ></div>
           <!-- 2-2 Section text -->
@@ -137,8 +136,8 @@ export default {
   align-items: center;
 }
 
-.apply-button {
-  border: 1px solid white;
+.scale-up:hover {
+  transform: scale(1.2);
 }
 
 @keyframes fadeIn {

@@ -184,7 +184,9 @@ module.exports = {
       right: "right",
       "right-bottom": "right bottom",
       "right-top": "right top",
-      top: "top"
+      top: "top",
+      "bottom-m13": "center bottom -13rem",
+      "bottom-m6": "center bottom -6rem"
     },
     backgroundSize: {
       auto: "auto",
