@@ -2,10 +2,33 @@
   <ClientOnly>
     <swiper class="m-auto" :options="swiperOption" ref="mySwiper">
       <!-- slides -->
-      <swiper-slide>
-        2019년 7기 30명의 사자들이 {{ index }}개의 서비스를 만들었습니다.
-        <animated-number :AnimationNumber="2019" />
+      <swiper-slide class="flex">
+        <div class="font-thin p-10 text-2xl border-right">
+          <div class="font-semibold text-4xl m-10">
+            <animated-number :AnimationNumber="2019" />년
+          </div>
+          에
+        </div>
+        <div class="font-thin p-10 text-2xl border-right">
+          <div class="font-semibold text-4xl m-10">
+            <animated-number :AnimationNumber="7" />기
+          </div>
+          로 선발된
+        </div>
+        <div class="font-thin p-10 text-2xl border-right">
+          <div class="font-semibold text-4xl m-10">
+            <animated-number :AnimationNumber="30" />명
+          </div>
+          사자들이
+        </div>
+        <div class="font-thin p-10 text-2xl">
+          <div class="font-semibold text-4xl m-10">
+            <animated-number :AnimationNumber="this.index" />개
+          </div>
+          서비스를 만들었습니다.
+        </div>
       </swiper-slide>
+
       <swiper-slide v-for="item in index" :key="item"
         >I'm Slide {{ item }}</swiper-slide
       >
@@ -97,7 +120,7 @@ export default {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  background-color: #eee;
+  /* background-color: #fafafa; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +135,10 @@ export default {
 .swiper-button-next,
 .swiper-button-prev {
   color: #f6921e;
+}
+
+.border-right {
+  border-right: 1px solid #dfe2e6;
 }
 </style>
 

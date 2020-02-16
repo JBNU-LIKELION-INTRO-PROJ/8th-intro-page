@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <animated-number
-      :value="this.AnimationNumber"
-      :formatValue="formatToPrice"
-      :duration="500"
-    />
-  </div>
+  <animated-number
+    :value="this.AnimationNumber"
+    :formatValue="formatToPrice"
+    :duration="1000"
+  />
 </template>
 
 <script>
