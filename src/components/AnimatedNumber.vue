@@ -2,7 +2,7 @@
   <animated-number
     :value="this.AnimationNumber"
     :formatValue="formatToPrice"
-    :duration="1000"
+    :duration="5000"
   />
 </template>
 

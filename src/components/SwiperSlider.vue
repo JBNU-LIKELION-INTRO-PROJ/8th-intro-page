@@ -45,21 +45,24 @@
         </div>
       </swiper-slide>
 
+      <!-- Project Slides -->
       <swiper-slide
         class="flex flex-col"
         v-for="item in projects"
         :key="item.id"
       >
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-10">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-10 scale-up">
           <g-image
             class="w-full border-bottom bg-white"
             :src="item.profileImage"
             :alt="item.title"
           />
+          <!-- 타이틀 -->
           <div class="px-6 py-4 bg-gray-100">
             <div class="font-bold text-xl mb-2 text-gray-900">
               {{ item.title }}
             </div>
+            <!-- 설명 -->
             <p
               v-if="item.description"
               class="text-gray-700 text-base font-thin"
@@ -67,6 +70,7 @@
               {{ item.description }}
             </p>
           </div>
+          <!-- 링크 태그 -->
           <div class="px-6 py-2 bg-gray-100">
             <a
               v-if="item.github"
@@ -191,6 +195,11 @@ export default {
 
 .border-bottom {
   border-bottom: 1px solid #dfe2e6;
+}
+
+.scale-up:hover {
+  transition: all ease-in-out 0.75s;
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px) {
