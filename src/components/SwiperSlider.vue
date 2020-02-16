@@ -2,16 +2,13 @@
   <ClientOnly>
     <swiper class="m-auto" :options="swiperOption" ref="mySwiper">
       <!-- slides -->
+      <swiper-slide>
+        2019년 7기 30명의 사자들이 {{ index }}개의 서비스를 만들었습니다.
+        <animated-number :AnimationNumber="2019" />
+      </swiper-slide>
       <swiper-slide v-for="item in index" :key="item"
         >I'm Slide {{ item }}</swiper-slide
       >
-      <!-- <swiper-slide>I'm Slide 2</swiper-slide>
-        <swiper-slide>I'm Slide 3</swiper-slide>
-        <swiper-slide>I'm Slide 4</swiper-slide>
-        <swiper-slide>I'm Slide 5</swiper-slide>
-        <swiper-slide>I'm Slide 6</swiper-slide>
-        <swiper-slide>I'm Slide 7</swiper-slide> -->
-      <!-- Optional controls -->
 
       <div class="swiper-pagination" slot="pagination"></div>
       <div class="swiper-button-prev" slot="button-prev"></div>
@@ -21,8 +18,7 @@
 </template>
 
 <script>
-// import "swiper/dist/css/swiper.css";
-// import { swiper, swiperSlide } from "vue-awesome-swiper";
+import AnimatedNumber from "./AnimatedNumber";
 
 export default {
   name: "SwiperSlider",
@@ -79,7 +75,8 @@ export default {
     swiperSlide: () =>
       import("vue-awesome-swiper/src")
         .then(m => m.swiperSlide)
-        .catch()
+        .catch(),
+    AnimatedNumber
   },
   computed: {
     swiper() {
