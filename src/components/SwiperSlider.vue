@@ -113,6 +113,7 @@
           </div>
         </div>
       </swiper-slide>
+      <swiper-slide class="back-gif"> </swiper-slide>
 
       <div class="swiper-pagination" slot="pagination"></div>
       <div class="swiper-button-prev" slot="button-prev"></div>
@@ -211,6 +212,12 @@ export default {
   .border-right {
     border-bottom: 1px solid #dfe2e6;
   }
+}
+
+.back-gif {
+  background: url("../../static/loading.gif");
+  background-position: center center;
+  background-size: cover;
 }
 </style>
 
