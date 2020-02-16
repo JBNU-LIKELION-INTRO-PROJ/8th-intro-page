@@ -4,7 +4,7 @@
       <!-- slides -->
       <swiper-slide class="flex flex-col md:flex-row flex-wrap">
         <div
-          class="flex-auto font-thin p-10 lg:text-2xl border-right md:text-lg text-base flex-grow"
+          class="flex-auto font-thin p-5 lg:text-2xl border-right md:text-lg text-base flex-grow"
         >
           <div
             class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
@@ -14,7 +14,7 @@
           에
         </div>
         <div
-          class="flex-auto font-thin p-10 lg:text-2xl border-right md:text-lg text-base flex-grow"
+          class="flex-auto font-thin p-5 lg:text-2xl border-right md:text-lg text-base flex-grow"
         >
           <div
             class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
@@ -24,7 +24,7 @@
           로 선발된
         </div>
         <div
-          class="flex-auto font-thin p-10 lg:text-2xl border-right md:text-lg text-base flex-grow"
+          class="flex-auto font-thin p-5 lg:text-2xl border-right md:text-lg text-base flex-grow"
         >
           <div
             class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
@@ -34,7 +34,7 @@
           사자들이
         </div>
         <div
-          class="flex-auto font-thin p-10 lg:text-2xl md:text-lg text-base flex-grow"
+          class="flex-auto font-thin p-5 lg:text-2xl md:text-lg text-base flex-grow"
         >
           <div
             class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
