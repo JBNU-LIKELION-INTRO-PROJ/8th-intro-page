@@ -51,7 +51,7 @@
         :key="item.id"
       >
         <div class="max-w-sm rounded overflow-hidden shadow-lg mx-10">
-          <img
+          <g-image
             class="w-full border-bottom bg-white"
             :src="item.profileImage"
             :alt="item.title"
