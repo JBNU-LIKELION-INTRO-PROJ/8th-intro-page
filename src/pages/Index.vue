@@ -76,10 +76,11 @@
       </div>
       <div class="section py-5 flex-col content-center mb-5" id="contact">
         <p
-          class="uppercase font-hairline lg:text-5xl text-3xl ml-5 tracking-widest"
+          class="uppercase font-hairline lg:text-5xl text-3xl ml-5 mb-3 tracking-widest"
         >
           Services
         </p>
+
         <swiper-slider />
       </div>
     </div>
