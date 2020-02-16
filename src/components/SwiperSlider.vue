@@ -4,31 +4,41 @@
       <!-- slides -->
       <swiper-slide class="flex flex-col md:flex-row flex-wrap">
         <div
-          class="flex-auto font-thin p-10 lg:text-2xl border-right text-lg flex-grow"
+          class="flex-auto font-thin p-10 lg:text-2xl border-right md:text-lg text-base flex-grow"
         >
-          <div class="font-semibold text-4xl lg:text-5xl xl:text-6xl">
+          <div
+            class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+          >
             <animated-number :AnimationNumber="2019" />년
           </div>
           에
         </div>
         <div
-          class="flex-auto font-thin p-10 lg:text-2xl border-right text-lg flex-grow"
+          class="flex-auto font-thin p-10 lg:text-2xl border-right md:text-lg text-base flex-grow"
         >
-          <div class="font-semibold text-4xl lg:text-5xl xl:text-6xl">
+          <div
+            class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+          >
             <animated-number :AnimationNumber="7" />기
           </div>
           로 선발된
         </div>
         <div
-          class="flex-auto font-thin p-10 lg:text-2xl border-right text-lg flex-grow"
+          class="flex-auto font-thin p-10 lg:text-2xl border-right md:text-lg text-base flex-grow"
         >
-          <div class="font-semibold text-4xl lg:text-5xl xl:text-6xl">
+          <div
+            class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+          >
             <animated-number :AnimationNumber="30" />명
           </div>
           사자들이
         </div>
-        <div class="flex-auto font-thin p-10 lg:text-2xl text-lg flex-grow">
-          <div class="font-semibold text-4xl lg:text-5xl xl:text-6xl">
+        <div
+          class="flex-auto font-thin p-10 lg:text-2xl md:text-lg text-base flex-grow"
+        >
+          <div
+            class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+          >
             <animated-number :AnimationNumber="this.index" />개
           </div>
           서비스를 만들었습니다.
@@ -126,7 +136,7 @@ export default {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  /* background-color: #fafafa; */
+  background-color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
