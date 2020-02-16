@@ -74,6 +74,8 @@ module.exports = {
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
+        'Do Hyeon',
+        'Jua'
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
@@ -87,8 +89,8 @@ module.exports = {
     },
   },
   variants: {
-    // Some useful comment
-  },
+//some useful commment  
+},
   plugins: [
     // Some useful comment
   ]
