@@ -39,7 +39,7 @@
           <div
             class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
           >
-            <animated-number :AnimationNumber="this.index" />개
+            <animated-number :AnimationNumber="projects.length" />개
           </div>
           서비스를 만들었습니다.
         </div>
@@ -60,10 +60,11 @@
             <div class="font-bold text-xl mb-2 text-gray-900">
               {{ item.title }}
             </div>
-            <p class="text-gray-700 text-base font-thin">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+            <p
+              v-if="item.description"
+              class="text-gray-700 text-base font-thin"
+            >
+              {{ item.description }}
             </p>
           </div>
           <div class="px-6 py-2 bg-gray-100">
@@ -118,6 +119,7 @@
 
 <script>
 import AnimatedNumber from "./AnimatedNumber";
+import services from "../services";
 
 export default {
   name: "SwiperSlider",
@@ -126,7 +128,6 @@ export default {
       swiperOption: {
         // swiper 옵션, 콜백함수 모두 동일하게 사용
         slidesPerView: "auto",
-        loop: true,
 
         pagination: {
           type: "progressbar",
@@ -138,40 +139,7 @@ export default {
         }
       },
       index: 4,
-      projects: [
-        {
-          id: 1,
-          title: "알려줘 전북대",
-          profileImage:
-            "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80",
-          link: "http://naver.com",
-          github: ""
-        },
-        {
-          id: 2,
-          title: "도와줘 관리비",
-          profileImage:
-            "https://github.com/houseelfdobby/house-elf-dobby/blob/master/staticfiles/img/logo.png?raw=true",
-          link: "http://naver.com",
-          github: "http://naver.com"
-        },
-        {
-          id: 3,
-          title: "알려줘 전북대",
-          profileImage:
-            "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80",
-          link: "",
-          github: "http://naver.com"
-        },
-        {
-          id: 4,
-          title: "알려줘 전북대",
-          profileImage:
-            "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80",
-          link: "",
-          github: ""
-        }
-      ]
+      projects: services
     };
   },
   components: {
