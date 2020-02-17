@@ -9,7 +9,10 @@
       >
         <div>
           <g-link v-if="theme === 'theme-light'" to="/"
-            ><g-image src="../../static/logo.svg" class="w-40" alt="logo"
+            ><g-image
+              src="../../static/basiclogo_E_H.png"
+              class="w-40"
+              alt="logo"
           /></g-link>
           <g-link v-else to="/"
             ><g-image
@@ -107,7 +110,7 @@
     <div class="flex-grow">
       <slot />
     </div>
-    <footer class="bg-green-700 text-white">
+    <footer class="bg-orange-300 text-white">
       <div
         class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
       >
