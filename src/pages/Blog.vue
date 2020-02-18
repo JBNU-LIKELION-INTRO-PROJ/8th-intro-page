@@ -54,9 +54,7 @@ query Posts ($page: Int) {
 import PaginationPosts from '../components/PaginationPosts'
 
 export default {
-  metaInfo: {
-    title: 'Blog'
-  },
+  
   components: {
     PaginationPosts
   }

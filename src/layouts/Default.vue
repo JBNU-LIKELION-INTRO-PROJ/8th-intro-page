@@ -276,7 +276,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      theme: ""
+      theme: "main"
     };
   },
   methods: {
