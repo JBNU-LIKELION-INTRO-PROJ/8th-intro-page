@@ -9,7 +9,7 @@
         <p class="text-gray-700 text-xs tracking-wide ">8기 대표 &bull;기획 담당 </p>
       </div>
       <div class="px-4 py-2 flex mb-4">
-        <a class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"  href="https://github.com/peterpark1011">Github</a>
+        <a class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"  href="https://github.com/PeterPPark">Github</a>
         <a class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"  href="https://www.notion.so/jbnulikelion8/8-notion-6bdc700dfc3b43199dfaf1a8987f90a4">brunch</a>
       </div>
     </div>
