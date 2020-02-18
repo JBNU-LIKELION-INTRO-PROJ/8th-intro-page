@@ -91,14 +91,10 @@
             >
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link to="/docs" class="text-copy-primary hover:text-gray-600"
-              >Members</g-link
-            >
+            <g-link to="/docs" class="text-copy-primary hover:text-gray-600">Members</g-link>
           </li>
           <li>
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600"
-              >FAQ</g-link
-            >
+            <g-link to="/blog" class="text-copy-primary hover:text-gray-600">FAQ</g-link>
           </li>
         </ul>
       </nav>
