@@ -93,9 +93,7 @@ query Documentation {
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Members'
-  }
+
 }
 </script>
 
