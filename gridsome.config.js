@@ -16,7 +16,6 @@ module.exports = {
   siteDescription: "JBNU Like Lion 8th Intro Page",
   siteUrl: "https://jbnu-likelion-intro-proj.github.io/8th-intro-page/",
   pathPrefix: "/8th-intro-page/",
-  icons: './src/slocan2.png/',
   plugins: [
     {
       use: "@gridsome/vue-remark",
