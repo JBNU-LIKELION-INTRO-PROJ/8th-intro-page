@@ -37,7 +37,7 @@
             <g-link to="/docs" class="text-copy-primary hover:text-gray-600">Members</g-link>
           </li>
           <li>
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
+            <g-link to="/blog" class="text-copy-primary hover:text-gray-600">FAQ</g-link>
           </li>
         </ul>
       </nav>
