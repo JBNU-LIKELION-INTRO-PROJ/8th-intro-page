@@ -4,8 +4,6 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import VueScrollTo from "vue-scrollto";
 import VueFuse from "vue-fuse";
-// import Vuetify from "vuetify";
-// import "vuetify/dist/vuetify.min.css";
 
 export default function(Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
@@ -16,8 +14,6 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   });
 
   Vue.use(VueFuse);
-  // Vue.use(Vuetify);
-  // appOptions.vuetify = new Vuetify({});
 
   head.meta.push({
     name: "keywords",

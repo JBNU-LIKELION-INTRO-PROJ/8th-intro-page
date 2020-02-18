@@ -12,9 +12,9 @@ const postcssPlugins = [tailwind()];
 if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 
 module.exports = {
-  siteName: "Like Lion at JBNU",
+  siteName: "Like Lion @ JBNU",
   siteDescription: "JBNU Like Lion 8th Intro Page",
-  siteUrl: "https://jbnu-likelion-intro-proj.github.io/8th-intro-page/",
+  siteUrl: "https://jbnu-likelion-intro-proj.github.io",
   pathPrefix: "/8th-intro-page/",
   plugins: [
     {
