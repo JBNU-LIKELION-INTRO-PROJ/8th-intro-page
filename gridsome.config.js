@@ -16,6 +16,7 @@ module.exports = {
   siteDescription: "JBNU Like Lion 8th Intro Page",
   siteUrl: "https://jbnu-likelion-intro-proj.github.io",
   pathPrefix: "/8th-intro-page/",
+  titleTemplate: "멋쟁이 사자처럼 @전북대",
   plugins: [
     {
       use: "@gridsome/vue-remark",
@@ -50,15 +51,18 @@ module.exports = {
       options: {
         contentTypeName: "Post",
         feedOptions: {
-          title: "Gridsome Portfolio Starter Blog",
-          feed_url: "https://gridsome-portfolio-starter.netlify.com/rss.xml",
-          site_url: "https://gridsome-portfolio-starter.netlify.com/"
+          title: "JBNU Like Lion",
+          feed_url:
+            "https://jbnu-likelion-intro-proj.github.io/8th-intro-page/rss.xml",
+          site_url: "https://jbnu-likelion-intro-proj.github.io/8th-intro-page/"
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.summary,
-          url: "https://gridsome-portfolio-starter.netlify.com" + node.path,
-          author: "Andre Madarang",
+          url:
+            "https://jbnu-likelion-intro-proj.github.io/8th-intro-page/" +
+            node.path,
+          author: "Caesiumy",
           date: node.date
         }),
         output: {

@@ -92,7 +92,6 @@ import CatchPhrase from "../components/CatchPhrase";
 import SwiperSlider from "../components/SwiperSlider";
 
 export default {
-  
   components: {
     CatchPhrase,
     SwiperSlider
