@@ -110,11 +110,7 @@
     <div class="flex-grow">
       <slot />
     </div>
-<<<<<<< HEAD
     <footer class="bg-orange-300 text-white">
-=======
-    <footer class="bg-orange-800 text-white">
->>>>>>> cd08bf0172d69f87f6661c43360334e953539d00
       <div
         class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
       >
