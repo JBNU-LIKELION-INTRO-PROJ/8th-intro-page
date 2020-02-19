@@ -87,6 +87,24 @@
   </Layout>
 </template>
 
+<page-query>
+query {
+  services: allService(sortBy: "id", order: ASC) {
+    totalCount
+    edges {
+      node {
+        id
+        title
+        profileImage
+        github
+        link
+        description
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
 import CatchPhrase from "../components/CatchPhrase";
 import SwiperSlider from "../components/SwiperSlider";
