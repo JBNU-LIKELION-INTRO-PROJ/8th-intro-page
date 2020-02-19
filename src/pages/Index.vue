@@ -58,7 +58,7 @@
         <div class="lg:flex lg:flex-row-reverse lg:mt-20">
           <!-- 2-2 Section bg pic -->
           <div
-            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full xl:bg-bottom-m13"
+            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full xl:bg-bottom-m12"
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
           ></div>
           <!-- 2-2 Section text -->
@@ -86,6 +86,24 @@
     </div>
   </Layout>
 </template>
+
+<page-query>
+query {
+  services: allService(sortBy: "id", order: ASC) {
+    totalCount
+    edges {
+      node {
+        id
+        title
+        profileImage
+        github
+        link
+        description
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import CatchPhrase from "../components/CatchPhrase";

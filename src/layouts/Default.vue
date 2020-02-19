@@ -110,7 +110,7 @@
     <div class="flex-grow">
       <slot />
     </div>
-    <footer class="bg-orange-800 text-white">
+    <footer class="bg-orange-300 text-white">
       <div
         class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
       >
@@ -263,12 +263,12 @@ query {
 </static-query>
 
 <script>
-import SearchInput from "../components/SearchInput";
+// import SearchInput from "../components/SearchInput";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 
 export default {
   components: {
-    SearchInput,
+    // SearchInput,
     ThemeSwitcher
   },
   mounted() {

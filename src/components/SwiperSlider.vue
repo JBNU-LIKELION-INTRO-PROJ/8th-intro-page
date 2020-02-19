@@ -39,7 +39,7 @@
           <div
             class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
           >
-            <animated-number :AnimationNumber="projects.length" />개
+            <animated-number :AnimationNumber="$page.services.totalCount" />개
           </div>
           서비스를 만들었습니다.
         </div>
@@ -48,34 +48,34 @@
       <!-- Project Slides -->
       <swiper-slide
         class="flex flex-col"
-        v-for="item in projects"
-        :key="item.id"
+        v-for="edge in $page.services.edges"
+        :key="edge.node.id"
       >
         <div class="max-w-sm rounded overflow-hidden shadow-lg mx-10 scale-up">
           <g-image
             class="w-full border-bottom bg-white"
-            :src="item.profileImage"
-            :alt="item.title"
+            :src="edge.node.profileImage"
+            :alt="edge.node.title"
           />
           <!-- 타이틀 -->
           <div class="px-6 py-4 bg-gray-100">
             <div class="font-bold text-xl mb-2 text-gray-900">
-              {{ item.title }}
+              {{ edge.node.title }}
             </div>
             <!-- 설명 -->
             <p
-              v-if="item.description"
+              v-if="edge.node.description"
               class="text-gray-700 text-base font-thin"
             >
-              {{ item.description }}
+              {{ edge.node.description }}
             </p>
           </div>
           <!-- 링크 태그 -->
           <div class="px-6 py-2 bg-gray-100">
             <a
-              v-if="item.github"
+              v-if="edge.node.github"
               class="inline-block bg-gray-200 rounded-full px-6 py-1 text-sm font-semibold text-gray-700 mr-2"
-              :href="item.github"
+              :href="edge.node.github"
               target="_blank"
             >
               <svg
@@ -92,10 +92,11 @@
               </svg>
               GitHub
             </a>
+            <!-- 링크 태그 -->
             <a
-              v-if="item.link"
+              v-if="edge.node.link"
               class="inline-block bg-gray-200 rounded-full px-6 py-1 text-sm font-semibold text-gray-700 mr-2"
-              :href="item.link"
+              :href="edge.node.link"
               target="_blank"
             >
               <svg
@@ -116,15 +117,15 @@
       <swiper-slide class="back-gif"> </swiper-slide>
 
       <div class="swiper-pagination" slot="pagination"></div>
-      <div class="swiper-button-prev" slot="button-prev"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
+      <div class="swiper-button-prev outline-none" slot="button-prev"></div>
+      <div class="swiper-button-next outline-none" slot="button-next"></div>
     </swiper>
   </ClientOnly>
 </template>
 
 <script>
 import AnimatedNumber from "./AnimatedNumber";
-import services from "../services";
+// import services from "../services";
 
 export default {
   name: "SwiperSlider",
@@ -143,8 +144,8 @@ export default {
           prevEl: ".swiper-button-prev"
         }
       },
-      index: 4,
-      projects: services
+      index: 4
+      // projects: services
     };
   },
   components: {
