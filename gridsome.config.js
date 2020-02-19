@@ -47,6 +47,13 @@ module.exports = {
       }
     },
     {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "services/**/*.md",
+        typeName: "service"
+      }
+    },
+    {
       use: "gridsome-plugin-rss",
       options: {
         contentTypeName: "Post",

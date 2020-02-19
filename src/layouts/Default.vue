@@ -263,12 +263,12 @@ query {
 </static-query>
 
 <script>
-import SearchInput from "../components/SearchInput";
+// import SearchInput from "../components/SearchInput";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 
 export default {
   components: {
-    SearchInput,
+    // SearchInput,
     ThemeSwitcher
   },
   mounted() {
