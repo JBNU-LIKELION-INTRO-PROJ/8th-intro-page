@@ -1,11 +1,7 @@
 ---
-title: What I Ate for Breakfast
-path: /what-i-ate-for-breakfast
-date: 2019-03-21
-summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
+title: 회비 어디다 쓰실 건가요?
+path: /question-number-eight
+date: 2020-03-12
+summary: 회비는 여러분 MT, 회식, 해커톤 등 행사로 쓸 예정입니다. 그리고 예산은 모든 멋사분들과 합의 하에 쓸 예정입니다.
 tags: ['lifestyle']
 ---
-
-![background](./images/blog_bg_1.jpg)
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus placeat quia! Voluptates corporis atque itaque, quae in aperiam reiciendis id, beatae dicta optio rem, cumque illum tempore accusamus blanditiis consequuntur doloribus accusantium. Expedita minus suscipit vel nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus placeat quia! Voluptates corporis atque itaque, quae in aperiam reiciendis id, beatae dicta optio rem, cumque illum tempore accusamus blanditiis consequuntur doloribus accusantium. Expedita minus suscipit vel nulla.

@@ -12,15 +12,6 @@ const { pathPrefix } = require("./gridsome.config");
 const nodeExternals = require("webpack-node-externals");
 
 module.exports = function(api, options) {
-  api.chainWebpack((config, { isServer }) => {
-    if (isServer) {
-      config.externals([
-        nodeExternals({
-          whitelist: [/^vuetify/, /^Vuetify/]
-        })
-      ]);
-    }
-  });
   api.loadSource(store => {
     /*
     Clean the pathPrefix

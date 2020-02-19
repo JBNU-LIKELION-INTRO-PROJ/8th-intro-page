@@ -92,9 +92,6 @@ import CatchPhrase from "../components/CatchPhrase";
 import SwiperSlider from "../components/SwiperSlider";
 
 export default {
-  metaInfo: {
-    title: "Home"
-  },
   components: {
     CatchPhrase,
     SwiperSlider

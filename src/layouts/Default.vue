@@ -16,7 +16,7 @@
           /></g-link>
           <g-link v-else to="/"
             ><g-image
-              src="../../static/logo_dark_mode.svg"
+              src="../../static/basiclogo_E_H_W.png"
               class="w-40"
               alt="logo"
           /></g-link>
@@ -42,9 +42,9 @@
           class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
           :class="isOpen ? 'block' : 'hidden'"
         >
-          <li class="mr-8 mb-6 lg:mb-0">
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
             <search-input />
-          </li>
+          </li> -->
           <li class="mr-8 mb-6 lg:mb-0">
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
           </li>
@@ -54,13 +54,13 @@
               href="/#projects"
               v-scroll-to="'#projects'"
               class="text-copy-primary hover:text-gray-600"
-              >Projects</a
+              >Main</a
             >
             <g-link
               v-else
               to="/#projects"
               class="text-copy-primary hover:text-gray-600"
-              >Projects</g-link
+              >Main</g-link
             >
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
@@ -69,13 +69,13 @@
               href="/#about"
               v-scroll-to="'#about'"
               class="text-copy-primary hover:text-gray-600"
-              >About</a
+              >Mission</a
             >
             <g-link
               v-else
               to="/#about"
               class="text-copy-primary hover:text-gray-600"
-              >About</g-link
+              >Mission</g-link
             >
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
@@ -84,23 +84,23 @@
               href="/#contact"
               v-scroll-to="'#contact'"
               class="text-copy-primary hover:text-gray-600"
-              >Contact</a
+              >Services</a
             >
             <g-link
               v-else
               to="/#contact"
               class="text-copy-primary hover:text-gray-600"
-              >Contact</g-link
+              >Services</g-link
             >
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/docs" class="text-copy-primary hover:text-gray-600"
-              >Docs</g-link
+              >Members</g-link
             >
           </li>
           <li>
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600"
-              >Blog</g-link
+              >FAQ</g-link
             >
           </li>
         </ul>
@@ -110,7 +110,11 @@
     <div class="flex-grow">
       <slot />
     </div>
+<<<<<<< HEAD
     <footer class="bg-orange-300 text-white">
+=======
+    <footer class="bg-orange-800 text-white">
+>>>>>>> cd08bf0172d69f87f6661c43360334e953539d00
       <div
         class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
       >
@@ -133,7 +137,7 @@
           </div>
         </div>
         <ul class="flex items-center">
-          <li class="mr-8">
+          <!-- <li class="mr-8">
             <a
               href="mailto:me@example.com"
               class="text-white hover:text-gray-400"
@@ -150,29 +154,30 @@
                 />
               </svg>
             </a>
-          </li>
+          </li> -->
 
           <li class="mr-8">
             <a
-              href="https://youtube.com/drehimself"
+              href="https://www.facebook.com/likelioncbnu"
               target="_blank"
               class="text-white hover:text-gray-400"
             >
               <svg
                 width="26"
                 height="20"
+                viewBox="0 0 512 512"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M25.457 3.13c-.3-1.232-1.18-2.203-2.299-2.532C21.13 0 13 0 13 0S4.87 0 2.842.598c-1.119.33-2 1.3-2.299 2.531C0 5.362 0 10.02 0 10.02s0 4.658.543 6.891c.3 1.232 1.18 2.162 2.299 2.49C4.87 20 13 20 13 20s8.13 0 10.158-.598c1.119-.33 2-1.26 2.299-2.49C26 14.677 26 10.02 26 10.02s0-4.658-.543-6.89zM10.34 14.25V5.79l6.795 4.23-6.795 4.23z"
+                  d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h236.574219v-198h-66.5v-77.5h66.5v-57.035156c0-66.140625 40.378906-102.140625 99.378906-102.140625 28.257813 0 52.542969 2.105469 59.621094 3.046875v69.128906h-40.683594c-32.101562 0-38.316406 15.253906-38.316406 37.640625v49.359375h76.75l-10 77.5h-66.75v198h121.574219c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm0 0"
                   fill-rule="nonzero"
                 />
               </svg>
             </a>
           </li>
 
-          <li class="mr-8">
+          <!-- <li class="mr-8">
             <a
               href="https://github.com/drehimself/gridsome-portfolio-starter"
               target="_blank"
@@ -190,9 +195,9 @@
                 />
               </svg>
             </a>
-          </li>
+          </li> -->
 
-          <li class="mr-8">
+          <!-- <li class="mr-8">
             <a
               href="https://twitter.com/drehimself"
               target="_blank"
@@ -210,11 +215,11 @@
                 />
               </svg>
             </a>
-          </li>
+          </li> -->
 
           <li>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/likelion_jbnu/"
               target="_blank"
               class="text-white hover:text-gray-400"
             >
@@ -264,10 +269,8 @@ query {
 <script>
 import SearchInput from "../components/SearchInput";
 import ThemeSwitcher from "../components/ThemeSwitcher";
-import Vuetify from "vuetify";
 
 export default {
-  vuetify: new Vuetify(),
   components: {
     SearchInput,
     ThemeSwitcher
@@ -278,7 +281,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      theme: ""
+      theme: "main"
     };
   },
   methods: {
