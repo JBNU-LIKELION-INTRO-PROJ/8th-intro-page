@@ -19,20 +19,20 @@ export default [
   },
   {
     id: 3,
-    title: "알려줘 전북대",
+    title: "봉투",
     profileImage:
-      "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80",
+      "../static/bongtoo.png",
     link: "",
-    github: "http://naver.com",
-    description: ""
+    github: "https://github.com/bongtoo",
+    description: "봉사활동 추천 플랫폼",
   },
   {
     id: 4,
-    title: "알려줘 전북대",
+    title: "찍사",
     profileImage:
-      "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80",
+      "../static/zzigsa.JPG",
     link: "",
-    github: "",
-    description: ""
+    github: "https://github.com/zzigsa",
+    description: "사진작가 매칭 플랫폼",
   }
 ];
