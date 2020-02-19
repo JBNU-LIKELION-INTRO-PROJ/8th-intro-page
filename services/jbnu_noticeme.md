@@ -1,6 +1,6 @@
 ---
 id: 0
-title: 알려줘 전북대
+title: 알려줘 전북대 [5기]
 profileImage: "https://github.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/blob/finaljh/static/jbnu_noticeme_revise.png?raw=true"
 link: "https://pf.kakao.com/_LffxoM"
 github: ""
