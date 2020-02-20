@@ -2,7 +2,7 @@
   <Layout>
     <div class="wrapper">
       <!-- First Section -->
-      <div class="section first-section" id="projects">
+      <div class="section first-section" id="main">
         <div class="cover-black"></div>
         <div class="container">
           <catch-phrase />
@@ -25,7 +25,7 @@
         </div>
       </div>
       <!-- Second Section -->
-      <div class="section py-5" id="about">
+      <div class="section py-5" id="mission">
         <p
           class="uppercase font-hairline lg:text-5xl text-3xl ml-5 tracking-widest"
         >
@@ -74,7 +74,7 @@
           </div>
         </div>
       </div>
-      <div class="section py-5 flex-col content-center mb-5" id="contact">
+      <div class="section py-5 flex-col content-center mb-5" id="services">
         <p
           class="uppercase font-hairline lg:text-5xl text-3xl ml-5 mb-3 tracking-widest"
         >
