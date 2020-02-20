@@ -120,13 +120,13 @@
           </div>
           <div>
             <a
-              href="/rss.xml"
+              href="/8th-intro-page/rss.xml"
               class="text-white hover:text-gray-400 font-normal"
               >RSS Feed</a
             >
             |
             <a
-              href="/sitemap.xml"
+              href="/8th-intro-page/sitemap.xml"
               class="text-white hover:text-gray-400 font-normal"
               >Sitemap</a
             >
