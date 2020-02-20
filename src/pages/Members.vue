@@ -1,174 +1,44 @@
 <template>
   <Layout>
     <div
-      class="cards flex flex-wrap lg:flex-grow m-auto bg-center bg-cover text-center"
+      class="cards flex flex-wrap flex-col md:flex-row lg:flex-grow text-center max-w-6xl m-auto my-10"
     >
       <div
-        class="card1 max-w-xs rounded overflow-hidden shadow-xl m-6 flex-auto"
+        v-for="item in content"
+        :key="item.id"
+        class="card max-w-xs rounded overflow-hidden shadow-xl flex-auto bg-gray-100"
       >
-        <img
-          class="w-screen h-64"
-          src="../../static/profileImages/1601s.jpg"
-          alt="profile of jhp"
-        />
+        <div class="overflow-hidden h-80">
+          <g-image
+            class="card-image w-screen w-full border-bottom bg-white"
+            :src="item.image"
+            :alt="item.name"
+          />
+        </div>
         <div class="px-4 py-2 mb-1">
           <div
-            class="font-semibold text-xl font-sans text-lg mb-1 text-orange-800"
+            class="font-semibold text-xl font-sans text-lg mb-1 text-gray-900"
           >
-            박종현
+            {{ item.name }}
           </div>
-          <p class="text-gray-700 text-xs tracking-wide ">
-            8기 대표 &bull;기획 담당
+          <p class="text-gray-700 text-xs tracking-wide text-gray-700">
+            {{ item.role }} &bull;{{ item.position }}
           </p>
         </div>
-        <div class="px-4 py-2 flex mb-4">
+        <div class="px-4 py-2 flex mb-4 justify-center">
           <a
-            class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
-            href="https://github.com/PeterPPark"
+            v-if="item.links.github"
+            class="soft-transition w-1/2 h-8 text-gray-800 hover:text-orange-300 hover: font-semibold px-2 py-1 border rounded bg-gray-200 mx-5"
+            :href="item.links.github"
+            target="_blank"
             >Github</a
           >
           <a
-            class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
-            href="https://brunch.co.kr/@petepp"
-            >brunch</a
-          >
-        </div>
-      </div>
-
-      <div
-        class="card2 max-w-xs rounded overflow-hidden shadow-xl m-6 flex-auto"
-      >
-        <img
-          class="w-screen h-64"
-          src="../../static/profileImages/kkm.jpg"
-          alt="profile of gkm"
-        />
-        <div class="px-4 py-2 mb-1">
-          <div
-            class="font-semibold text-xl font-sans text-lg mb-1 text-orange-800"
-          >
-            구경민
-          </div>
-          <p class="text-gray-700 text-xs tracking-wide ">
-            8기 부대표 &bull;데이터 담당
-          </p>
-        </div>
-        <div class="px-4 py-2 flex mb-2">
-          <a
-            class="flex-1 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
-            href="https://github.com/Ant9615"
-            >Github</a
-          >
-        </div>
-      </div>
-      <div
-        class="card3 max-w-xs w-1/2 rounded overflow-hidden shadow-xl m-6 flex-auto"
-      >
-        <img
-          class="w-screen h-64"
-          src="https://image.chosun.com/sitedata/image/201812/04/2018120400079_0.jpg"
-          alt="profile of lbk"
-        />
-        <div class="px-4 py-2 mb-1">
-          <div
-            class="font-semibold text-xl font-sans text-lg mb-1 text-orange-800"
-          >
-            이범기
-          </div>
-          <p class="text-gray-700 text-xs tracking-wide ">
-            8기 운영진 &bull;예산 담당
-          </p>
-        </div>
-        <div class="px-4 py-2 flex">
-          <a
-            class="flex-1 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
-            href="https://github.com/baaaam771"
-            >Github</a
-          >
-        </div>
-      </div>
-      <div
-        class="card4 max-w-xs w-1/2 rounded overflow-hidden shadow-xl m-6 flex-auto"
-      >
-        <img
-          class="w-screen h-64"
-          src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Kim_Dami_20180830.jpg"
-          alt="profile of khh"
-        />
-        <div class="px-4 py-2 mb-1">
-          <div
-            class="font-semibold text-xl font-sans text-lg mb-1 text-orange-800"
-          >
-            김현희
-          </div>
-          <p class="text-gray-700 text-xs tracking-wide ">
-            8기 운영진 &bull;개발 담당
-          </p>
-        </div>
-        <div class="px-4 py-2 flex">
-          <a
-            class="flex-1 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
-            href="https://github.com/su-mmer"
-            >Github</a
-          >
-        </div>
-      </div>
-      <div
-        class="card5 max-w-xs w-1/2 rounded overflow-hidden shadow-xl m-6 flex-auto"
-      >
-        <img
-          class="w-screen h-64"
-          src="https://img.hani.co.kr/imgdb/resize/2017/0914/150523852061_20170914.JPG"
-          alt="profile of jjh"
-        />
-        <div class="px-4 py-2 mb-1">
-          <div
-            class="font-semibold text-xl font-sans text-lg mb-1 text-orange-800"
-          >
-            장준혁
-          </div>
-          <p class="text-gray-700 text-xs tracking-wide ">
-            8기 운영진 &bull;홍보 담당
-          </p>
-        </div>
-        <div class="px-4 py-2 flex">
-          <a
-            class="flex-1 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
-            href="https://github.com/CitrusSoda"
-            >Github</a
-          >
-        </div>
-      </div>
-      <div
-        class="card6 max-w-xs w-1/2 rounded overflow-hidden shadow-xl m-6 flex-auto"
-      >
-        <img
-          class="w-screen h-64"
-          src="https://avatars2.githubusercontent.com/u/35517199?s=460&v=4"
-          alt="profile of ycs"
-        />
-        <div class="px-4 py-2 mb-1">
-          <div
-            class="font-semibold text-xl font-sans text-lg mb-1 text-orange-800"
-          >
-            윤창식
-          </div>
-          <p class="text-gray-700 text-xs tracking-wide ">
-            7기 대표 &bull;개발 담당
-          </p>
-        </div>
-        <div class="px-4 py-2 flex mb-4">
-          <a
-            href="https://github.com/CaesiumY"
-            class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded "
-          >
-            Github</a
-          >
-          <a
-            class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
-            href="https://caesiumy.github.io"
-          >
-            blog</a
+            v-if="item.links.brunch"
+            class="soft-transition w-1/2 h-8 text-gray-800 hover:text-orange-300 hover: font-semibold px-2 py-1 border rounded bg-gray-200 mx-5"
+            :href="item.links.brunch"
+            target="_blank"
+            >Brunch</a
           >
         </div>
       </div>
@@ -177,7 +47,111 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      content: [
+        {
+          id: 1,
+          name: "박종현",
+          image:
+            "https://github.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/blob/master/static/profileImages/1601s.jpg?raw=true",
+          role: "8기 대표",
+          position: "기획 담당",
+          links: {
+            github: "https://github.com/PeterPPark",
+            brunch: "https://brunch.co.kr/@petepp"
+          }
+        },
+        {
+          id: 2,
+          name: "구경민",
+          image:
+            "https://github.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/blob/master/static/profileImages/kkm.jpg?raw=true",
+          role: "8기 부대표",
+          position: "데이터 담당",
+          links: {
+            github: "https://github.com/Ant9615",
+            brunch: ""
+          }
+        },
+        {
+          id: 3,
+          name: "김현희",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/9/9f/Kim_Dami_20180830.jpg",
+          role: "8기 운영진",
+          position: "개발 담당",
+          links: {
+            github: "https://github.com/su-mmer",
+            brunch: ""
+          }
+        },
+        {
+          id: 4,
+          name: "장준혁",
+          image:
+            "https://img.hani.co.kr/imgdb/resize/2017/0914/150523852061_20170914.JPG",
+          role: "8기 운영진",
+          position: "홍보 담당",
+          links: {
+            github: "https://github.com/CitrusSoda",
+            brunch: ""
+          }
+        },
+        {
+          id: 5,
+          name: "이범기",
+          image:
+            "https://image.chosun.com/sitedata/image/201812/04/2018120400079_0.jpg",
+          role: "8기 운영진",
+          position: "재무 담당",
+          links: {
+            github: "https://github.com/baaaam771",
+            brunch: ""
+          }
+        },
+        {
+          id: 6,
+          name: "윤창식",
+          image: "https://avatars2.githubusercontent.com/u/35517199?s=460&v=4",
+          role: "7기 대표",
+          position: "개발 담당",
+          links: {
+            github: "https://github.com/CaesiumY",
+            brunch: ""
+          }
+        }
+      ]
+    };
+  }
+};
 </script>
 
-<style></style>
+<style scoped>
+.card {
+  margin: 1rem auto;
+}
+
+.card-image {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.soft-transition {
+  transition: all 0.15s ease-in-out;
+}
+
+.soft-transition:hover {
+  transition: all ease-in-out 0.25s;
+  transform: scale(1.2);
+}
+</style>
