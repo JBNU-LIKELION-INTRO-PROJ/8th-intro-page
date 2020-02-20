@@ -21,6 +21,9 @@ description: # 서비스 설명을 적어주세요.  *옵션입니다
 
 3. 다 적은 뒤 풀리퀘스트(PR)를 주시면 검토 후 반영해드립니다.
 
+> 만약 프로필 이미지를 이곳 저장소에 넣고 싶다면 `service_images` 폴더에 넣어주세요. <br/>
+> 그리고 나서 이미지 주소 복사로 링크를 가져오셔서 프론트매터에 넣어주시면 됩니다.
+
 ## 💻설치하기 및 실행하기
 
 1. Gridsome을 설치하지 않았다면 `npm install --global @gridsome/cli` 로 설치해준다.
@@ -40,7 +43,7 @@ description: # 서비스 설명을 적어주세요.  *옵션입니다
 ### 폴더 구조
 
 ```sh
-├─blog
+├─faqs
 │  │
 │  ├─ ...markdown files
 │  │
@@ -75,14 +78,12 @@ tags: [] // FAQ를 구분할 태그를 적는 곳. _(ex. '지원', '활동', '�
    │
    ├─pages
    │    ├─404.vue   // 오류 페이지 안내
-   │    ├─Blog.vue  // FAQ 페이지
-   │    ├─Docs.vue  // 운영진 소개 페이지
+   │    ├─Faq.vue  // FAQ 페이지
+   │    ├─Members.vue  // 운영진 소개 페이지
    │    └─Index.vue // 첫 소개 랜딩 페이지
    │
-   └─templates
-        ├─Documentation.vue     // 아직 건들 필요 없음
-        ├─Post.vue              // FAQ 포스트를 눌렀을 때 나오는 페이지
-        └─Tag.vue               // 태그 모음 페이지
+   └─templates // 정리 완료
+        
 ```
 
 ## ➕추가
