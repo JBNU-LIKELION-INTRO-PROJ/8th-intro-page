@@ -51,14 +51,14 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <a
               v-if="$route.path === '/'"
-              href="/#projects"
-              v-scroll-to="'#projects'"
+              href="/#main"
+              v-scroll-to="'#main'"
               class="text-copy-primary hover:text-gray-600"
               >Main</a
             >
             <g-link
               v-else
-              to="/#projects"
+              to="/#main"
               class="text-copy-primary hover:text-gray-600"
               >Main</g-link
             >
@@ -66,14 +66,14 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <a
               v-if="$route.path === '/'"
-              href="/#about"
-              v-scroll-to="'#about'"
+              href="/#mission"
+              v-scroll-to="'#mission'"
               class="text-copy-primary hover:text-gray-600"
               >Mission</a
             >
             <g-link
               v-else
-              to="/#about"
+              to="/#mission"
               class="text-copy-primary hover:text-gray-600"
               >Mission</g-link
             >
@@ -81,25 +81,25 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <a
               v-if="$route.path === '/'"
-              href="/#contact"
-              v-scroll-to="'#contact'"
+              href="/#services"
+              v-scroll-to="'#services'"
               class="text-copy-primary hover:text-gray-600"
               >Services</a
             >
             <g-link
               v-else
-              to="/#contact"
+              to="/#services"
               class="text-copy-primary hover:text-gray-600"
               >Services</g-link
             >
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <g-link to="/docs" class="text-copy-primary hover:text-gray-600"
+            <g-link to="/members" class="text-copy-primary hover:text-gray-600"
               >Members</g-link
             >
           </li>
           <li>
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600"
+            <g-link to="/faq" class="text-copy-primary hover:text-gray-600"
               >FAQ</g-link
             >
           </li>

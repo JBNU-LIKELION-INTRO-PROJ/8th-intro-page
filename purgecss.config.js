@@ -12,7 +12,7 @@ module.exports = {
     "./src/**/*.html",
     "./src/**/*.pug",
     "./src/**/*.md",
-    "./docs/**/*.md",
+    "./services/**/*.md",
     "./blog/**/*.md"
   ],
   whitelist: [
