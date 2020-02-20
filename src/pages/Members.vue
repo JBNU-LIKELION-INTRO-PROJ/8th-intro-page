@@ -6,39 +6,39 @@
       <div
         v-for="item in content"
         :key="item.id"
-        class="card max-w-xs rounded overflow-hidden shadow-xl flex-auto"
+        class="card max-w-xs rounded overflow-hidden shadow-xl flex-auto bg-gray-100"
       >
         <div class="overflow-hidden h-80">
-          <img
-            class="w-screen  w-full border-bottom bg-white"
+          <g-image
+            class="card-image w-screen w-full border-bottom bg-white"
             :src="item.image"
             :alt="item.name"
           />
         </div>
         <div class="px-4 py-2 mb-1">
           <div
-            class="font-semibold text-xl font-sans text-lg mb-1 text-orange-800"
+            class="font-semibold text-xl font-sans text-lg mb-1 text-gray-900"
           >
             {{ item.name }}
           </div>
-          <p class="text-gray-700 text-xs tracking-wide ">
+          <p class="text-gray-700 text-xs tracking-wide text-gray-700">
             {{ item.role }} &bull;{{ item.position }}
           </p>
         </div>
-        <div class="px-4 py-2 flex mb-4">
+        <div class="px-4 py-2 flex mb-4 justify-center">
           <a
             v-if="item.links.github"
-            class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
+            class="soft-transition w-1/2 h-8 text-gray-800 hover:text-orange-300 hover: font-semibold px-2 py-1 border rounded bg-gray-200 mx-5"
             :href="item.links.github"
             target="_blank"
             >Github</a
           >
           <a
             v-if="item.links.brunch"
-            class="w-1/2 h-8 text-orange-800 bg-transparent hover: font-semibold hover:text-blue-500 px-2 py-1 border hover:border-transparent rounded"
+            class="soft-transition w-1/2 h-8 text-gray-800 hover:text-orange-300 hover: font-semibold px-2 py-1 border rounded bg-gray-200 mx-5"
             :href="item.links.brunch"
             target="_blank"
-            >brunch</a
+            >Brunch</a
           >
         </div>
       </div>
@@ -131,5 +131,27 @@ export default {
 <style scoped>
 .card {
   margin: 1rem auto;
+}
+
+.card-image {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.soft-transition {
+  transition: all 0.15s ease-in-out;
+}
+
+.soft-transition:hover {
+  transition: all ease-in-out 0.25s;
+  transform: scale(1.2);
 }
 </style>
