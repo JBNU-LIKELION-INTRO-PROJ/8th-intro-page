@@ -13,7 +13,7 @@ module.exports = {
     "./src/**/*.pug",
     "./src/**/*.md",
     "./services/**/*.md",
-    "./blog/**/*.md"
+    "./faqs/**/*.md"
   ],
   whitelist: [
     "body",
