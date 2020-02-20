@@ -133,9 +133,9 @@
           </div>
         </div>
         <ul class="flex items-center">
-          <!-- <li class="mr-8">
+          <li class="mr-8">
             <a
-              href="mailto:me@example.com"
+              href="mailto:jbnu@likelion.org"
               class="text-white hover:text-gray-400"
             >
               <svg
@@ -150,7 +150,7 @@
                 />
               </svg>
             </a>
-          </li> -->
+          </li>
 
           <li class="mr-8">
             <a
@@ -173,9 +173,9 @@
             </a>
           </li>
 
-          <!-- <li class="mr-8">
+          <li class="mr-8">
             <a
-              href="https://github.com/drehimself/gridsome-portfolio-starter"
+              href="https://github.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page"
               target="_blank"
               class="text-white hover:text-gray-400"
             >
@@ -191,7 +191,7 @@
                 />
               </svg>
             </a>
-          </li> -->
+          </li>
 
           <!-- <li class="mr-8">
             <a
