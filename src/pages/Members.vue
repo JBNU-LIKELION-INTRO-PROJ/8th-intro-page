@@ -8,7 +8,7 @@
       >
         <img
           class="w-screen h-64"
-          src="../../static/1601s.jpg"
+          src="../../static/profileImages/1601s.jpg"
           alt="profile of jhp"
         />
         <div class="px-4 py-2 mb-1">
@@ -40,7 +40,7 @@
       >
         <img
           class="w-screen h-64"
-          src="../../static/kkm.jpg"
+          src="../../static/profileImages/kkm.jpg"
           alt="profile of gkm"
         />
         <div class="px-4 py-2 mb-1">
