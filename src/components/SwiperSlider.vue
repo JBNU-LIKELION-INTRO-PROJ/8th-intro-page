@@ -125,7 +125,6 @@
 
 <script>
 import AnimatedNumber from "./AnimatedNumber";
-// import services from "../services";
 
 export default {
   name: "SwiperSlider",
