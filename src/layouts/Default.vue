@@ -235,6 +235,7 @@
         </ul>
       </div>
     </footer>
+    <scroll-top />
   </div>
 </template>
 
@@ -248,10 +249,12 @@ query {
 
 <script>
 import ThemeSwitcher from "../components/ThemeSwitcher";
+import ScrollTop from "../components/ScrollTop";
 
 export default {
   components: {
-    ThemeSwitcher
+    ThemeSwitcher,
+    ScrollTop
   },
   mounted() {
     this.theme = localStorage.getItem("theme") || "theme-light";

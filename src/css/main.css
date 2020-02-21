@@ -54,6 +54,10 @@
   color: #cbd5e0;
 }
 
+.theme-dark .scrolltop {
+  fill: #cbd5e0;
+}
+
 .content-wrapper {
   transition: background-color 0.25s;
 }

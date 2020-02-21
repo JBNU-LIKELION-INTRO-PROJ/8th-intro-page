@@ -311,6 +311,9 @@ module.exports = {
     inset: {
       "0": "0",
       auto: "auto",
+      "20": "20px",
+      "30": "30px",
+      "40": "40px",
       "80": "80px",
       "90": "90px",
       "4p": "4%",
@@ -528,4 +531,3 @@ module.exports = {
   corePlugins: {},
   plugins: []
 };
-
