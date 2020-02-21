@@ -185,9 +185,10 @@ module.exports = {
       "right-bottom": "right bottom",
       "right-top": "right top",
       top: "top",
+      "bottom-m5": "center bottom -5rem",
+      "bottom-m6": "center bottom -6rem",
       "bottom-m9": "center bottom -9rem",
-      "bottom-m12": "center bottom -12rem",
-      "bottom-m6": "center bottom -6rem"
+      "bottom-m12": "center bottom -12rem"
     },
     backgroundSize: {
       auto: "auto",
