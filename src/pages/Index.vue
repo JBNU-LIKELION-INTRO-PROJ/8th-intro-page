@@ -58,7 +58,7 @@
         <div class="lg:flex lg:flex-row-reverse lg:mt-20">
           <!-- 2-2 Section bg pic -->
           <div
-            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full md:bg-bottom-m9 lg:bg-bottom-m5 xl:bg-bottom-m9"
+            class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full md:bg-bottom-m9 lg:bg-bottom-m5 xl:bg-bottom-40p"
             style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
           ></div>
           <!-- 2-2 Section text -->
@@ -76,7 +76,7 @@
       </div>
 
       <!-- Section 3 -->
-      <div class="section py-5 flex-col content-center mb-5" id="services">
+      <div class="section py-10 flex-col content-center" id="services">
         <p
           class="uppercase font-hairline lg:text-5xl text-3xl ml-5 mb-3 tracking-widest"
         >

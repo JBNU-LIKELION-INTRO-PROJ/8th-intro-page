@@ -188,7 +188,8 @@ module.exports = {
       "bottom-m5": "center bottom -5rem",
       "bottom-m6": "center bottom -6rem",
       "bottom-m9": "center bottom -9rem",
-      "bottom-m12": "center bottom -12rem"
+      "bottom-m12": "center bottom -12rem",
+      "bottom-40p": "center bottom 40%"
     },
     backgroundSize: {
       auto: "auto",
