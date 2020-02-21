@@ -24,6 +24,11 @@ description: # 서비스 설명을 적어주세요.  *옵션입니다
 > 만약 프로필 이미지를 이곳 저장소에 넣고 싶다면 `service_images` 폴더에 넣어주세요. <br/>
 > 그리고 나서 이미지 주소 복사로 링크를 가져오셔서 프론트매터에 넣어주시면 됩니다.
 
+### 🤷‍♂️저는 PR이 뭔지 몰라요.
+
+그럼 [이슈](https://github.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/issues)로 가서 `New Issue`를 통해 [서비스 추가하기](https://github.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/issues/new/choose)를 선택해서 이슈를 적어주세요! <br/>
+검토 후 직접 반영해드립니다.
+
 ## 💻설치하기 및 실행하기
 
 1. Gridsome을 설치하지 않았다면 `npm install --global @gridsome/cli` 로 설치해준다.
@@ -83,7 +88,7 @@ tags: [] // FAQ를 구분할 태그를 적는 곳. _(ex. '지원', '활동', '�
    │    └─Index.vue // 첫 소개 랜딩 페이지
    │
    └─templates // 정리 완료
-        
+
 ```
 
 ## ➕추가
