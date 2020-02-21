@@ -132,7 +132,7 @@ export default {
 
 <style scoped>
 .section:nth-child(1) {
-  height: 60rem;
+  height: 100vh;
 }
 
 .first-section {
