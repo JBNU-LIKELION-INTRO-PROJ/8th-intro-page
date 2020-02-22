@@ -43,16 +43,13 @@ module.exports = {
         contentTypeName: "Post",
         feedOptions: {
           title: "JBNU Like Lion",
-          feed_url:
-            "https://jbnu-likelion-intro-proj.github.io/8th-intro-page/rss.xml",
-          site_url: "https://jbnu-likelion-intro-proj.github.io/8th-intro-page/"
+          feed_url: "https://jbnu-likelion.web.app/rss.xml",
+          site_url: "https://jbnu-likelion.web.app/"
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.summary,
-          url:
-            "https://jbnu-likelion-intro-proj.github.io/8th-intro-page/" +
-            node.path,
+          url: "https://jbnu-likelion.web.app/" + node.path,
           author: "Caesiumy",
           date: node.date
         }),
