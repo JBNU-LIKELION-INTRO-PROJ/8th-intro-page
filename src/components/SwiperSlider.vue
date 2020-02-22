@@ -47,11 +47,11 @@
 
       <!-- Project Slides -->
       <swiper-slide
-        class="flex flex-col"
+        class="flex flex-col kor"
         v-for="edge in $page.services.edges"
         :key="edge.node.id"
       >
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-10 scale-up">
+        <div class="max-w-sm rounded overflow-auto shadow-lg mx-10 scale-up">
           <g-image
             class="w-full border-bottom bg-white"
             :src="edge.node.profileImage"
@@ -168,6 +168,10 @@ export default {
 </script>
 
 <style scoped>
+.kor {
+  word-break: keep-all;
+}
+
 .swiper-container {
   height: 75vh;
   width: 100%;
