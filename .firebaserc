@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "jbnulikelion"
+  },
+  "targets": {
+    "jbnulikelion": {
+      "hosting": {
+        "production": [
+          "jbnu-likelion"
+        ],
+        "test": [
+          "jbnulikelion"
+        ]
+      }
+    }
+  }
+}
