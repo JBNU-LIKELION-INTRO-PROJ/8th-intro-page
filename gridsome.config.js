@@ -14,8 +14,7 @@ if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 module.exports = {
   siteName: "Like Lion @ JBNU",
   siteDescription: "JBNU Like Lion 8th Intro Page",
-  siteUrl: "https://jbnu-likelion-intro-proj.github.io",
-  pathPrefix: "/8th-intro-page/",
+  siteUrl: "https://jbnu-likelion.firebaseapp.com/",
   titleTemplate: "멋쟁이 사자처럼 @전북대",
   plugins: [
     {
