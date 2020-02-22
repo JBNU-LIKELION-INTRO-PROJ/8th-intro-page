@@ -2,7 +2,7 @@
   <Layout>
     <div class="wrapper">
       <!-- First Section -->
-      <div class="section first-section" id="main">
+      <div class="section first-section flex" id="main">
         <div class="cover-black"></div>
         <div class="container">
           <catch-phrase />
@@ -141,7 +141,6 @@ export default {
   background-position-x: center;
   background-position-y: center;
   animation: fadeIn 0.9s ease-in-out forwards;
-  display: flex;
 }
 
 .cover-black {
