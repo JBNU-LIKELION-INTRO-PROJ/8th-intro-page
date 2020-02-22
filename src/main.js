@@ -41,10 +41,21 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     href: "https://unpkg.com/swiper/css/swiper.min.css"
   });
 
-  // head.link.push({
-  //   rel: "stylesheet",
-  //   href: "https://fonts.googleapis.com/icon?family=Material+Icons"
-  // });
+  // Google Analytics
+  head.script.push({
+    src: "/__/firebase/7.9.1/firebase-app.js",
+    body: true
+  });
+
+  head.script.push({
+    src: "/__/firebase/7.9.1/firebase-analytics.js",
+    body: true
+  });
+
+  head.script.push({
+    src: "/__/firebase/init.js",
+    body: true
+  });
 
   Vue.component("Layout", DefaultLayout);
 }
