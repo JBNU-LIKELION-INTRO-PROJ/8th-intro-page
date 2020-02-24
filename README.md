@@ -2,7 +2,7 @@
 
 ## 🎬배포 주소
 
-<img src="./service_images/2020-02-24.jpeg" width=600px>
+<img src="./service_images/2020-02-24.jpeg">
 
 - [배포 서버](https://jbnu-likelion.web.app/)
 - [개발 서버](https://jbnulikelion.web.app/)
