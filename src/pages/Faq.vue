@@ -27,7 +27,7 @@
 
 <page-query>
 query Posts ($page: Int) {
-  posts: allPost (sortBy: "date", order: DESC, perPage: 5, page: $page) @paginate {
+  posts: allPost (sortBy: "index", order: ASC, perPage: 5, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
@@ -36,9 +36,9 @@ query Posts ($page: Int) {
     edges {
       node {
         id
+        index
         title
         summary
-        path
       }
     }
   }
