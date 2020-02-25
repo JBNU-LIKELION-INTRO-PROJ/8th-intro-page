@@ -12,7 +12,7 @@
         <div class="text-lg mb-4 font-thin" v-html="post.node.content"></div>
       </div>
       <!-- end post -->
-      a
+
       <pagination-posts
         v-if="$page.posts.pageInfo.totalPages > 1"
         base="/faq"
