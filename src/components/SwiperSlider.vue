@@ -61,6 +61,7 @@
           <div class="px-6 py-4 bg-gray-100">
             <div class="font-bold text-xl mb-2 text-gray-900">
               {{ edge.node.title }}
+              <span v-if="edge.node.number"> [{{ edge.node.number }}기] </span>
             </div>
             <!-- 설명 -->
             <p

@@ -9,9 +9,7 @@
         <h2 class="text-3xl font-bold">{{ post.node.title }}</h2>
         <div class="text-copy-secondary mb-4"></div>
 
-        <div class="text-lg mb-4 font-thin">
-          {{ post.node.summary }}
-        </div>
+        <div class="text-lg mb-4 font-thin" v-html="post.node.content"></div>
       </div>
       <!-- end post -->
 
@@ -27,7 +25,7 @@
 
 <page-query>
 query Posts ($page: Int) {
-  posts: allPost (sortBy: "date", order: DESC, perPage: 5, page: $page) @paginate {
+  posts: allPost (sortBy: "index", order: ASC, perPage: 5, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
@@ -36,9 +34,9 @@ query Posts ($page: Int) {
     edges {
       node {
         id
+        index
         title
-        summary
-        path
+        content
       }
     }
   }

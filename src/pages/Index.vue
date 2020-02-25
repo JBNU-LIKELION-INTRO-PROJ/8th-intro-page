@@ -97,6 +97,7 @@ query {
       node {
         id
         title
+        number
         profileImage
         github
         link
