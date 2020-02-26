@@ -38,7 +38,7 @@
           <!-- 2-1 Section bg pic -->
           <div
             class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full xl:bg-bottom-m6"
-            style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic1.jpg')"
+            style="background-image: url('https://raw.githubusercontent.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/master/static/section2_pic1.jpg')"
           ></div>
           <!-- 2-1 Section text -->
 
@@ -59,7 +59,7 @@
           <!-- 2-2 Section bg pic -->
           <div
             class="lg:w-60vw xl:h-35vh h-30vh bg-no-repeat bg-center bg-cover w-full md:bg-bottom-m9 lg:bg-bottom-m5 xl:bg-bottom-40p"
-            style="background-image: url('https://raw.githubusercontent.com/CaesiumY/8th-intro-page/master/static/section2_pic2.jpg')"
+            style="background-image: url('https://raw.githubusercontent.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/master/static/section2_pic2.jpg')"
           ></div>
           <!-- 2-2 Section text -->
           <div
