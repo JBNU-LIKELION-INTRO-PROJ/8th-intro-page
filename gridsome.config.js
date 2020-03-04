@@ -18,6 +18,12 @@ module.exports = {
   titleTemplate: "멋쟁이 사자처럼 @전북대",
   plugins: [
     {
+      use: "@gridsome/plugin-google-analytics",
+      options: {
+        id: "UA-159657781-1"
+      }
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "faqs/**/*.md",

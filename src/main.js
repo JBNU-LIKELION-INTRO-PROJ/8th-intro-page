@@ -31,6 +31,11 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     content: "Like Lion 8th Managers"
   });
 
+  head.meta.push({
+    name: "google-site-verification",
+    content: "X5RsihjawhE3piWxawDbrQMxwdWmer8Mv6TUM0Mpujg"
+  });
+
   head.link.push({
     rel: "stylesheet",
     href:
@@ -41,7 +46,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     href: "https://unpkg.com/swiper/css/swiper.min.css"
   });
 
-  // Google Analytics
+  // Firebase
   head.script.push({
     src: "/__/firebase/7.9.1/firebase-app.js",
     body: true
