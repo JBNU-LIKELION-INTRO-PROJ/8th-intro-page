@@ -36,6 +36,11 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     content: "X5RsihjawhE3piWxawDbrQMxwdWmer8Mv6TUM0Mpujg"
   });
 
+  head.meta.push({
+    name: "naver-site-verification",
+    content: "8db23393c00aefcded94f4feb618fe44b985fda6"
+  });
+
   head.link.push({
     rel: "stylesheet",
     href:
