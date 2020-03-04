@@ -45,6 +45,30 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     content: "8db23393c00aefcded94f4feb618fe44b985fda6"
   });
 
+  head.meta.push({
+    property: "og:type",
+    content: "website"
+  });
+  head.meta.push({
+    property: "og:title",
+    content: "전북대 멋쟁이 사자처럼 홈페이지"
+  });
+
+  head.meta.push({
+    property: "og:description",
+    content: "전북대 멋쟁이 사자처럼 소개 페이지입니다!"
+  });
+
+  head.meta.push({
+    property: "og:url",
+    content: "https://jbnu-likelion.web.app"
+  });
+
+  head.meta.push({
+    property: "og:image",
+    content: "https://jbnu-likelion.web.app/og.png"
+  });
+
   head.link.push({
     rel: "stylesheet",
     href:
