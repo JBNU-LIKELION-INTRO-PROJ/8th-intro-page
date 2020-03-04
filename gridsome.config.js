@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 module.exports = {
   siteName: "Like Lion @ JBNU",
   siteDescription: "JBNU Like Lion 8th Intro Page",
-  siteUrl: "https://jbnu-likelion.web.app/",
+  siteUrl: "https://jbnu-likelion.web.app",
   titleTemplate: "멋쟁이 사자처럼 @전북대",
   plugins: [
     {
@@ -50,12 +50,12 @@ module.exports = {
         feedOptions: {
           title: "JBNU Like Lion",
           feed_url: "https://jbnu-likelion.web.app/rss.xml",
-          site_url: "https://jbnu-likelion.web.app/"
+          site_url: "https://jbnu-likelion.web.app"
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.summary,
-          url: "https://jbnu-likelion.web.app/" + node.path,
+          url: "https://jbnu-likelion.web.app" + node.path,
           author: "Caesiumy",
           date: node.date
         }),
