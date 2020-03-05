@@ -3,7 +3,6 @@
 
 import DefaultLayout from "~/layouts/Default.vue";
 import VueScrollTo from "vue-scrollto";
-import VueFuse from "vue-fuse";
 
 export default function(Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
@@ -13,7 +12,6 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     easing: "ease"
   });
 
-  Vue.use(VueFuse);
   head.link.push({
     rel: "canonical",
     href: "https://jbnu-likelion.web.app"
