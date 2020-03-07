@@ -63,18 +63,7 @@ export default {
             brunch: "https://brunch.co.kr/@petepp"
           }
         },
-        {
-          id: 2,
-          name: "구경민",
-          image:
-            "https://github.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/blob/master/static/profileImages/kkm.jpg?raw=true",
-          role: "8기 부대표",
-          position: "데이터 담당",
-          links: {
-            github: "https://github.com/Ant9615",
-            brunch: ""
-          }
-        },
+
         {
           id: 3,
           name: "김현희",
