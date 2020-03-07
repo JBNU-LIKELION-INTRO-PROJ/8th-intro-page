@@ -20,17 +20,27 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   head.meta.push({
     name: "keywords",
     content:
-      "Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS"
+      "전북대, 멋쟁이 사자처럼, 홈페이지, Hack, your, life, JBNU, likelion"
+  });
+
+  head.meta.push({
+    name: "content-language",
+    content: "kr"
+  });
+
+  head.meta.push({
+    name: "title",
+    content: "전북대 멋쟁이 사자처럼 홈페이지"
   });
 
   head.meta.push({
     name: "description",
-    content: "JBNU Like Lion 8th Intro Page"
+    content: "JBNU Like Lion 8th Intro Page, 전북대 멋쟁이 사자처럼 홈페이지"
   });
 
   head.meta.push({
     name: "author",
-    content: "Like Lion 8th Managers"
+    content: "Like Lion 8th Managers, 전북대 멋쟁이 사자처럼"
   });
 
   head.meta.push({
