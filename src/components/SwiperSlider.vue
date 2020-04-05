@@ -126,7 +126,6 @@
 
 <script>
 import AnimatedNumber from "./AnimatedNumber";
-import "swiper/css/swiper.css";
 
 export default {
   name: "SwiperSlider",
@@ -152,11 +151,11 @@ export default {
   components: {
     swiper: () =>
       import("vue-awesome-swiper")
-        .then(m => m.Swiper)
+        .then(m => m.swiper)
         .catch(),
     swiperSlide: () =>
-      import("vue-awesome-swiper")
-        .then(m => m.SwiperSlide)
+      import("vue-awesome-swiper/src")
+        .then(m => m.swiperSlide)
         .catch(),
     AnimatedNumber
   },
