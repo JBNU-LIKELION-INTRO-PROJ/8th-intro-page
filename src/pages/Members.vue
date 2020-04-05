@@ -84,7 +84,8 @@ export default {
           position: "홍보 담당",
           links: {
             github: "https://github.com/CitrusSoda",
-            gitlab: "https://gitlab.com/CitrusSoda"
+            gitlab: "https://gitlab.com/CitrusSoda",
+            brunch: "https://brunch.co.kr/@petepp"
           }
         },
         {
