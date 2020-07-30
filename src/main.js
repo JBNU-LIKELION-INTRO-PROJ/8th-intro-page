@@ -9,99 +9,99 @@ export default function(Vue, { router, head, isClient, appOptions }) {
 
   Vue.use(VueScrollTo, {
     duration: 1000,
-    easing: "ease"
+    easing: "ease",
   });
 
   head.link.push({
     rel: "canonical",
-    href: "https://jbnu-likelion.web.app"
+    href: "https://jbnu-likelion.web.app",
   });
 
   head.meta.push({
     name: "keywords",
     content:
-      "전북대, 멋쟁이 사자처럼, 홈페이지, Hack, your, life, JBNU, likelion"
+      "전북대, 멋쟁이 사자처럼, 홈페이지, Hack, your, life, JBNU, likelion",
   });
 
   head.meta.push({
     name: "content-language",
-    content: "kr"
+    content: "kr",
   });
 
   head.meta.push({
     name: "title",
-    content: "전북대 멋쟁이 사자처럼 홈페이지"
+    content: "전북대 멋쟁이 사자처럼 홈페이지",
   });
 
   head.meta.push({
     name: "description",
-    content: "JBNU Like Lion 8th Intro Page, 전북대 멋쟁이 사자처럼 홈페이지"
+    content: "JBNU Like Lion 8th Intro Page, 전북대 멋쟁이 사자처럼 홈페이지",
   });
 
   head.meta.push({
     name: "author",
-    content: "Like Lion 8th Managers, 전북대 멋쟁이 사자처럼"
+    content: "Like Lion 8th Managers, 전북대 멋쟁이 사자처럼",
   });
 
   head.meta.push({
     name: "google-site-verification",
-    content: "X5RsihjawhE3piWxawDbrQMxwdWmer8Mv6TUM0Mpujg"
+    content: "X5RsihjawhE3piWxawDbrQMxwdWmer8Mv6TUM0Mpujg",
   });
 
   head.meta.push({
     name: "naver-site-verification",
-    content: "8db23393c00aefcded94f4feb618fe44b985fda6"
+    content: "8db23393c00aefcded94f4feb618fe44b985fda6",
   });
 
   head.meta.push({
     property: "og:type",
-    content: "website"
+    content: "website",
   });
   head.meta.push({
     property: "og:title",
-    content: "전북대 멋쟁이 사자처럼 홈페이지"
+    content: "전북대 멋쟁이 사자처럼 홈페이지",
   });
 
   head.meta.push({
     property: "og:description",
-    content: "전북대 멋쟁이 사자처럼 소개 페이지입니다!"
+    content: "전북대 멋쟁이 사자처럼 소개 페이지입니다!",
   });
 
   head.meta.push({
     property: "og:url",
-    content: "https://jbnu-likelion.web.app"
+    content: "https://jbnu-likelion.web.app",
   });
 
   head.meta.push({
     property: "og:image",
-    content: "https://jbnu-likelion.web.app/og.png"
+    content: "https://jbnu-likelion.web.app/og.png",
   });
 
   head.link.push({
     rel: "stylesheet",
     href:
-      "https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean"
+      "https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean",
   });
 
   head.link.push({
     rel: "stylesheet",
-    href: "https://unpkg.com/swiper/css/swiper.min.css"
+    href: "https://unpkg.com/swiper/swiper-bundle.min.css",
   });
 
   // Firebase
   head.script.push({
     src: "/__/firebase/7.9.1/firebase-app.js",
-    body: true
+    body: true,
   });
 
   head.script.push({
     src: "/__/firebase/7.9.1/firebase-analytics.js",
-    body: true
+    body: true,
   });
 
   head.script.push({
     src: "/__/firebase/init.js",
-    body: true
+    body: true,
   });
 
   Vue.component("Layout", DefaultLayout);
