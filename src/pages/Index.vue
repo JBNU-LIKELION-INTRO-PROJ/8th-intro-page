@@ -17,7 +17,7 @@
           </p>
           <a
             class="soft-transition border-2 border-white text-white hover:text-gray-900 hover:bg-white text-xl px-6 py-2 rounded-full"
-            href="https://forms.gle/yqFkpiVpoHZEo57q9"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdOcoSpJdeRBeXlzRrLFBF28XswhWrsQUYUbXhYbStGj77jjA/viewform"
             target="blank"
             >지원하기</a
           >

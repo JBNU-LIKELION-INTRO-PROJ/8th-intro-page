@@ -15,7 +15,7 @@ module.exports = {
   siteName: "Like Lion @ JBNU",
   siteDescription: "JBNU Like Lion 8th Intro Page",
   siteUrl: "https://jbnu-likelion.web.app",
-  titleTemplate: "멋쟁이 사자처럼 @전북대",
+  titleTemplate: "멋쟁이 사자처럼 - 전북대",
   plugins: [
     {
       use: "@gridsome/plugin-google-analytics",

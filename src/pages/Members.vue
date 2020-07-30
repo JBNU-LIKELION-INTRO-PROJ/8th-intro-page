@@ -25,7 +25,7 @@
             {{ item.role }} &bull;{{ item.position }}
           </p>
         </div>
-        <div class="px-4 py-2 flex mb-4 justify-center">
+        <div class="px-4 py-2 flex mb-4 justify-center capitalize">
           <a
             v-if="item.links.github"
             class="soft-transition w-1/2 h-8 text-gray-800 hover:text-orange-300 hover: font-semibold px-2 py-1 border rounded bg-gray-200 mx-5"
@@ -34,12 +34,12 @@
             >Github</a
           >
           <a
-            v-if="item.links.brunch"
+            v-if="Object.values(item.links)[1]"
             class="soft-transition w-1/2 h-8 text-gray-800 hover:text-orange-300 hover: font-semibold px-2 py-1 border rounded bg-gray-200 mx-5"
-            :href="item.links.brunch"
+            :href="getLinksArray(item.links, 'link')"
             target="_blank"
-            >Brunch</a
-          >
+            >{{ getLinksArray(item.links, "key") }}
+          </a>
         </div>
       </div>
     </div>
@@ -63,18 +63,7 @@ export default {
             brunch: "https://brunch.co.kr/@petepp"
           }
         },
-        {
-          id: 2,
-          name: "구경민",
-          image:
-            "https://github.com/JBNU-LIKELION-INTRO-PROJ/8th-intro-page/blob/master/static/profileImages/kkm.jpg?raw=true",
-          role: "8기 부대표",
-          position: "데이터 담당",
-          links: {
-            github: "https://github.com/Ant9615",
-            brunch: ""
-          }
-        },
+
         {
           id: 3,
           name: "김현희",
@@ -83,8 +72,7 @@ export default {
           role: "8기 운영진",
           position: "개발 담당",
           links: {
-            github: "https://github.com/su-mmer",
-            brunch: ""
+            github: "https://github.com/su-mmer"
           }
         },
         {
@@ -96,7 +84,8 @@ export default {
           position: "홍보 담당",
           links: {
             github: "https://github.com/CitrusSoda",
-            brunch: ""
+            gitlab: "https://gitlab.com/CitrusSoda",
+            brunch: "https://brunch.co.kr/@petepp"
           }
         },
         {
@@ -107,8 +96,7 @@ export default {
           role: "8기 운영진",
           position: "재무 담당",
           links: {
-            github: "https://github.com/baaaam771",
-            brunch: ""
+            github: "https://github.com/baaaam771"
           }
         },
         {
@@ -118,12 +106,21 @@ export default {
           role: "7기 대표",
           position: "개발 담당",
           links: {
-            github: "https://github.com/CaesiumY",
-            brunch: ""
+            github: "https://github.com/CaesiumY"
           }
         }
       ]
     };
+  },
+
+  methods: {
+    getLinksArray(obj, index) {
+      if (index === "link") {
+        return Object.entries(obj)[1][1];
+      } else {
+        return Object.entries(obj)[1][0];
+      }
+    }
   }
 };
 </script>
