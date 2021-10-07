@@ -14,7 +14,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
 
   head.link.push({
     rel: "canonical",
-    href: "https://jbnu-likelion.web.app",
+    href: "https://caesiumy.github.io/8th-intro-page/",
   });
 
   head.meta.push({
@@ -69,12 +69,12 @@ export default function(Vue, { router, head, isClient, appOptions }) {
 
   head.meta.push({
     property: "og:url",
-    content: "https://jbnu-likelion.web.app",
+    content: "https://caesiumy.github.io/8th-intro-page/",
   });
 
   head.meta.push({
     property: "og:image",
-    content: "https://jbnu-likelion.web.app/og.png",
+    content: "https://caesiumy.github.io/8th-intro-page/og.png",
   });
 
   head.link.push({

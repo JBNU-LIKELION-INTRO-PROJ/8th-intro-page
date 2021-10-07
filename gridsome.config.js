@@ -14,14 +14,15 @@ if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 module.exports = {
   siteName: "Like Lion @ JBNU",
   siteDescription: "JBNU Like Lion 8th Intro Page",
-  siteUrl: "https://jbnu-likelion.web.app",
+  siteUrl: "https://caesiumy.github.io",
+  pathPrefix: "/8th-intro-page",
   titleTemplate: "멋쟁이 사자처럼 - 전북대",
   plugins: [
     {
       use: "@gridsome/plugin-google-analytics",
       options: {
-        id: "UA-159657781-1"
-      }
+        id: "UA-159657781-1",
+      },
     },
     {
       use: "@gridsome/source-filesystem",
@@ -31,17 +32,17 @@ module.exports = {
         refs: {
           tags: {
             typeName: "Tag",
-            create: true
-          }
-        }
-      }
+            create: true,
+          },
+        },
+      },
     },
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "services/**/*.md",
-        typeName: "service"
-      }
+        typeName: "service",
+      },
     },
     {
       use: "gridsome-plugin-rss",
@@ -49,50 +50,50 @@ module.exports = {
         contentTypeName: "Post",
         feedOptions: {
           title: "JBNU Like Lion",
-          feed_url: "https://jbnu-likelion.web.app/rss.xml",
-          site_url: "https://jbnu-likelion.web.app"
+          feed_url: "https://caesiumy.github.io/8th-intro-page/rss.xml",
+          site_url: "https://caesiumy.github.io/8th-intro-page",
         },
-        feedItemOptions: node => ({
+        feedItemOptions: (node) => ({
           title: node.title,
           description: node.summary,
-          url: "https://jbnu-likelion.web.app" + node.path,
+          url: "https://caesiumy.github.io/8th-intro-page" + node.path,
           author: "Caesiumy",
-          date: node.date
+          date: node.date,
         }),
         output: {
           dir: "./static",
-          name: "rss.xml"
-        }
-      }
+          name: "rss.xml",
+        },
+      },
     },
     {
       use: "@gridsome/plugin-sitemap",
       options: {
-        cacheTime: 600000 // default
-      }
-    }
+        cacheTime: 600000, // default
+      },
+    },
   ],
   templates: {
-    Tag: "/tag/:id"
+    Tag: "/tag/:id",
   },
   transformers: {
     remark: {
       plugins: [
         [
           "gridsome-plugin-remark-shiki",
-          { theme: "Material-Theme-Palenight", skipInline: true }
-        ]
+          { theme: "Material-Theme-Palenight", skipInline: true },
+        ],
       ],
       externalLinksTarget: "_blank",
       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-      anchorClassName: "icon icon-link"
-    }
+      anchorClassName: "icon icon-link",
+    },
   },
   css: {
     loaderOptions: {
       postcss: {
-        plugins: postcssPlugins
-      }
-    }
-  }
+        plugins: postcssPlugins,
+      },
+    },
+  },
 };
