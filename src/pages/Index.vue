@@ -75,7 +75,10 @@
       </div>
 
       <!-- Section 3 -->
-      <div class="section py-10 flex-col content-center" id="services">
+      <div
+        class="section py-10 flex-col content-center service-section"
+        id="services"
+      >
         <p
           class="uppercase font-hairline lg:text-5xl text-3xl ml-5 mb-3 tracking-widest"
         >
@@ -114,19 +117,19 @@ import SwiperSlider from "../components/SwiperSlider";
 export default {
   components: {
     CatchPhrase,
-    SwiperSlider
+    SwiperSlider,
   },
   data() {
     return {
-      isActive: false
+      isActive: false,
     };
   },
 
   methods: {
     handleClick(e) {
       alert("아직 지원 기간이 아닙니다.");
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -181,5 +184,10 @@ export default {
 
 .second-section__text {
   word-break: keep-all;
+}
+
+.service-section {
+  overflow: hidden;
+  position: relative;
 }
 </style>
