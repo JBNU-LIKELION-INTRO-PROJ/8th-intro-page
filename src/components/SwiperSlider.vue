@@ -1,6 +1,10 @@
 <template>
   <ClientOnly>
-    <swiper class="m-auto" :options="swiperOption" ref="mySwiper">
+    <swiper
+      class="m-auto swiper-container"
+      :options="swiperOption"
+      ref="mySwiper"
+    >
       <!-- slides -->
       <swiper-slide class="flex flex-col md:flex-row flex-wrap">
         <div
@@ -137,34 +141,34 @@ export default {
 
         pagination: {
           type: "progressbar",
-          el: ".swiper-pagination"
+          el: ".swiper-pagination",
         },
         navigation: {
           nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        }
+          prevEl: ".swiper-button-prev",
+        },
       },
-      index: 4
+      index: 4,
       // projects: services
     };
   },
   components: {
     swiper: () =>
       import("vue-awesome-swiper")
-        .then(m => m.swiper)
+        .then((m) => m.swiper)
         .catch(),
     swiperSlide: () =>
       import("vue-awesome-swiper/src")
-        .then(m => m.swiperSlide)
+        .then((m) => m.swiperSlide)
         .catch(),
-    AnimatedNumber
+    AnimatedNumber,
   },
   computed: {
     swiper() {
       return this.$refs.mySwiper.swiper;
-    }
+    },
   },
-  mounted() {}
+  mounted() {},
 };
 </script>
 
@@ -230,5 +234,9 @@ export default {
 <style>
 .swiper-pagination-progressbar-fill {
   background: #f6921e !important;
+}
+
+.swiper-container {
+  position: relative;
 }
 </style>
